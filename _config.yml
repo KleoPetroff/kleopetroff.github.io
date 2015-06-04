@@ -1,0 +1,4 @@
+title: Kleo Petrov
+markdown: kramdown
+permalink: pretty
+exclude: [gulpfile.js]
