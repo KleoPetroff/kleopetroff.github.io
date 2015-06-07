@@ -1,0 +1,38 @@
+/*
+ * Clearfix
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix { *zoom: 1 }
+
+
+/*
+ * Layout
+ */
+
+body {
+    font-family: 'Roboto', Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.posts { list-style: none }
+.posts li { display: block }
+
+.en,
+.bg {
+    float: left;
+}
+
+.date {
+    float: right;
+
+}
