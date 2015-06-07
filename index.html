@@ -4,9 +4,10 @@ layout: default
 
 <ul class="posts">
     {% for post in site.posts %}
-        <li><a class="{% if post.language == 'en' %}en
+        <li class="clearfix"><a class="{% if post.language == 'en' %}en
                   {% else post.language == 'bg' %}bg
                   {% endif %}" href="{{post.url}}">{{post.title}}</a>
+            <span class="date">{{post.date | date_to_string }}</span>
         </li>
     {% endfor %}
 </ul>
