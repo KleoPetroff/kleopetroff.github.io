@@ -14,7 +14,6 @@
 
 .clearfix { *zoom: 1 }
 
-
 /*
  * Layout
  */
@@ -24,15 +23,33 @@ body {
     font-size: 16px;
 }
 
+.navigation {
+    text-align: right;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
 .posts { list-style: none }
 .posts li { display: block }
+
+h2 { font: 2em/.6 'Roboto Slab', 'Roboto', Verdana, sans-serif }
 
 .en,
 .bg {
     float: left;
+    text-decoration: none;
+    padding-right: 25px;
+    color: #333333;
 }
+
+.en { background: url("/assets/images/en.png") no-repeat right center }
+.bg { background: url('/assets/images/bg.png') no-repeat right center }
 
 .date {
     float: right;
-
 }
+
+
