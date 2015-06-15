@@ -4,14 +4,11 @@
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    display: table;
 }
 
-.clearfix:after {
-    clear: both;
-}
-
+.clearfix:after { clear: both }
 .clearfix { *zoom: 1 }
 
 /*
@@ -23,8 +20,34 @@ body {
     font-size: 16px;
 }
 
+header {
+    background: url("/assets/images/header-bg.jpg") no-repeat center top;
+    background-size: 100% 100%;
+    min-height: 200px;
+}
+
+.logo {
+    font: 2em/1 'Roboto Slab', Verdana, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 60px;
+    float: left;
+}
+
+.logo:hover {
+    text-shadow: 2px 1px 1px rgba(99, 47, 93, 1);
+    color: #fff;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+nav { float: right }
+
 .navigation {
     text-align: right;
+    padding-top: 72px;
 }
 
 .navigation li {
@@ -32,8 +55,25 @@ body {
     margin: 0 10px;
 }
 
-.posts { list-style: none }
-.posts li { display: block }
+.navigation li a {
+    font: 1.3em/1 'Roboto Slab', Verdana, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    text-decoration: underline;
+    text-shadow: 2px 1px 1px rgba(99, 47, 93, 1);
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.posts {
+    list-style: none;
+    margin-top: 3em;
+}
 
 h2 { font: 2em/.6 'Roboto Slab', 'Roboto', Verdana, sans-serif }
 
@@ -42,14 +82,21 @@ h2 { font: 2em/.6 'Roboto Slab', 'Roboto', Verdana, sans-serif }
     float: left;
     text-decoration: none;
     padding-right: 25px;
-    color: #333333;
+    color: #632F5D;
+}
+
+.en:hover,
+.bg:hover {
+    color: #E79192;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 
 .en { background: url("/assets/images/en.png") no-repeat right center }
 .bg { background: url('/assets/images/bg.png') no-repeat right center }
 
-.date {
-    float: right;
-}
+.date { float: right }
 
 
