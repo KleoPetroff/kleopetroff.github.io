@@ -9,7 +9,7 @@ var gulp    = require('gulp'),
 gulp.task('css', function() {
     gulp.src('css/*.css')
         .pipe(plubmer())
-        .pipe(concat('bundle.min.css'))
+        .pipe(concat('styles.min.css'))
         .pipe(minify())
         .pipe(gulp.dest('assets/css'));
     console.log(color.bold.blue.underline('Concatenation and Minification Successful :)'));
