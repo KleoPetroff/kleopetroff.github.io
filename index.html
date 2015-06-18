@@ -5,7 +5,7 @@ layout: default
     <div class="row">
         <ul class="posts twelve column">
             {% for post in site.posts %}
-                <li><h2 class="clearfix"><a class="{% if post.language == 'en' %}en{% else post.language == 'bg' %}bg{% endif %}" href="{{post.url}}">{{post.title}}</a></h2>
+                <li class="clearfix"><h2><a class="{% if post.language == 'en' %}en{% else post.language == 'bg' %}bg{% endif %}" href="{{post.url}}">{{post.title}}</a></h2>
                     <span class="date">{{post.date | date_to_string }}</span>
                 </li>
             {% endfor %}
