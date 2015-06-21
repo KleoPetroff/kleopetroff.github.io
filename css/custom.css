@@ -77,7 +77,7 @@ nav { float: right }
 
 .posts h2 {
     font-family: 'Roboto Slab', 'Roboto', Verdana, sans-serif;
-    font-size: 2.5em;
+    font-size: 2.2em;
 }
 
 .en,
@@ -103,6 +103,12 @@ nav { float: right }
 .date { float: right }
 
 
+.heading {
+    font-family: 'Roboto Slab', 'Roboto', Verdana, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
+
 /* Single Post */
 .post {
     margin-top: 40px;
@@ -113,6 +119,8 @@ nav { float: right }
     margin-bottom: 30px;
     font-family: 'Roboto Slab', 'Roboto', Verdana, sans-serif;
 }
+
+/* Media Queries */
 
 @media all and (max-width: 505px) {
     .navigation { 
