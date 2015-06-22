@@ -26,6 +26,11 @@ header {
     padding: 36px 0;
 }
 
+p,
+li{
+    font-size: 1.2em;
+}
+
 .logo {
     font: 3em/1 'Roboto Slab', Verdana, sans-serif;
     color: #fff;
@@ -168,6 +173,25 @@ nav { float: right }
 
 .contact-position { float: right }
 
+.left {
+    margin-top: 40px;
+    padding-left: 20px;
+    border-left: 1px solid #222;
+    position: relative;
+}
+
+.left:before {
+    position: absolute;
+    background: url("/assets/images/about.png") no-repeat;
+    width: 160px;
+    height: 111px;
+    content: "";
+    left: -95px;
+}
+
+.left h3 { color: #3B0A35 }
+
+
 /* Media Queries */
 
 @media all and (max-width: 768px) {
@@ -191,6 +215,14 @@ nav { float: right }
 
     .contact-position {
         float: none;
+    }
+
+    .left {
+        border-left: none;
+    }
+
+    .left:before {
+        display: none;
     }
 }
 
