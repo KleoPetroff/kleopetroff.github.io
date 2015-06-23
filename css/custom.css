@@ -27,7 +27,8 @@ header {
 }
 
 p,
-li{
+li,
+span {
     font-size: 1.2em;
 }
 
@@ -173,11 +174,18 @@ nav { float: right }
 
 .contact-position { float: right }
 
-.left {
+.container .left,
+.container .right{
     margin-top: 40px;
     padding-left: 20px;
     border-left: 1px solid #222;
     position: relative;
+    margin-left: 8.66666666667%;
+}
+
+.container .left:first-of-type {
+    margin-right: 4%;
+    margin-left: 8.66666666667%
 }
 
 .left:before {
@@ -189,13 +197,90 @@ nav { float: right }
     left: -95px;
 }
 
-.left h3 { color: #3B0A35 }
+.left h3,
+.right h3 {
+    color: #3B0A35;
+}
+
+.right:before {
+    position: absolute;
+    background: url("/assets/images/skills.png") no-repeat;
+    width: 160px;
+    height: 111px;
+    content: "";
+    left: -95px;
+}
+
+.right-skills div {
+    margin-bottom: 10px;
+}
+
+.right--name {
+    min-width: 30%;
+    float: left;
+}
+
+.right-percentage {
+    float: right;
+    height: 24px;
+    background: #f0f0f0;
+    width: 70%;
+    position: relative;
+}
+
+.right-percentage:after {
+    position: absolute;
+    background: #212221;
+    right: 0;
+    height: 100%;
+    content: "";
+}
+
+.ninety-five:after { width: 95% }
+.fifty-five:after  { width: 55% }
+.forty:after       { width: 40% }
 
 
 /* Media Queries */
 
+
+
+@media all and (max-width: 901px) {
+    .date {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .posts h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .posts h2 a  {
+        clear: both;
+        float: none;
+    }
+
+    .container .left:first-of-type {
+        margin-left: 0;
+        border-left: none;
+    }
+    
+    .container .right {
+        border: none;
+        margin-left: 10%;
+    }
+
+    .left:before,
+    .right:before {
+        background: none;
+    }
+}
+
 @media all and (max-width: 768px) {
-    .navigation { 
+    .navigation {
         text-align: center;
         display: block;
     }
@@ -224,23 +309,16 @@ nav { float: right }
     .left:before {
         display: none;
     }
+
+    .container .right {
+        margin-left: 0;
+    }
 }
 
-@media all and (max-width: 901px) {
-    .date {
-        float: none;
-        display: block;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    
-    .posts h2 {
-        text-align: center;
-        margin-bottom: 0;
-    }
-    
-    .posts h2 a  {
-        clear: both;
-        float: none;
+@media all and (min-width: 768px) and (max-width: 1023px)  {
+    .right-percentage {
+        width: 100%;
+        margin-bottom: 5px;
+        margin-top: 5px;
     }
 }
