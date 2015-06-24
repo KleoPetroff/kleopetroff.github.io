@@ -108,7 +108,6 @@ nav { float: right }
 
 .date { float: right }
 
-
 .heading {
     font-family: 'Roboto Slab', 'Roboto', Verdana, sans-serif;
     text-align: center;
@@ -200,6 +199,35 @@ nav { float: right }
 .left h3,
 .right h3 {
     color: #3B0A35;
+    margin-top: 0.25em;
+}
+
+.second { clear: both }
+
+.second:before {
+    background: url("/assets/images/school.png") no-repeat;
+}
+
+
+.second:after {
+    height: 15em;
+    top: -15em;
+    left: -1px;
+    width: 1px;
+    background: #000;
+    content: "";
+    position: absolute;
+}
+
+.second-school + .second-school { margin-top: 5em }
+.second-school p{ margin-bottom: 0 }
+
+.second--name {
+    font-family: 'Roboto', Verdana, sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+
 }
 
 .right:before {
@@ -211,9 +239,9 @@ nav { float: right }
     left: -95px;
 }
 
-.right-skills div {
-    margin-bottom: 10px;
-}
+.right-skills div { margin-bottom: 10px }
+.right-skills .separate { margin-bottom: 5em }
+.right-skills ul { list-style: none }
 
 .right--name {
     min-width: 30%;
@@ -236,9 +264,13 @@ nav { float: right }
     content: "";
 }
 
-.ninety-five:after { width: 95% }
-.fifty-five:after  { width: 55% }
-.forty:after       { width: 40% }
+.ninety-five:after  { width: 95% }
+.ninety:after       { width: 90% }
+.eighty-four:after  { width: 84% }
+.seventy-nine:after { width: 78% }
+.fifty-five:after   { width: 55% }
+.fifty:after        { width: 50% }
+.forty:after        { width: 40% }
 
 
 /* Media Queries */
@@ -263,7 +295,8 @@ nav { float: right }
         float: none;
     }
 
-    .container .left:first-of-type {
+    .container .left:first-of-type,
+    .container .left{
         margin-left: 0;
         border-left: none;
     }
@@ -271,6 +304,10 @@ nav { float: right }
     .container .right {
         border: none;
         margin-left: 10%;
+    }
+
+    .second:after {
+        display: none;
     }
 
     .left:before,
@@ -310,6 +347,7 @@ nav { float: right }
         display: none;
     }
 
+    
     .container .right {
         margin-left: 0;
     }
