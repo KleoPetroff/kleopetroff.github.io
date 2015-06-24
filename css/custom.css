@@ -187,9 +187,9 @@ nav { float: right }
     margin-left: 8.66666666667%
 }
 
-.left:before {
+.left:before,
+.right:before{
     position: absolute;
-    background: url("/assets/images/about.png") no-repeat;
     width: 160px;
     height: 111px;
     content: "";
@@ -202,14 +202,19 @@ nav { float: right }
     margin-top: 0.25em;
 }
 
-.second { clear: both }
-
-.second:before {
-    background: url("/assets/images/school.png") no-repeat;
+.third {
+    clear: both;
+    margin-right: 4%;
 }
 
+.first:before  { background: url("/assets/images/about.png") no-repeat    }
+.second:before { background: url("/assets/images/skills.png") no-repeat   }
+.third:before  { background: url("/assets/images/school.png") no-repeat   }
+.forth:before  { background: url("/assets/images/personal.png") no-repeat }
 
-.second:after {
+
+.third:after,
+.forth:after {
     height: 15em;
     top: -15em;
     left: -1px;
@@ -228,15 +233,6 @@ nav { float: right }
     font-weight: 700;
     margin-bottom: 0.5em;
 
-}
-
-.right:before {
-    position: absolute;
-    background: url("/assets/images/skills.png") no-repeat;
-    width: 160px;
-    height: 111px;
-    content: "";
-    left: -95px;
 }
 
 .right-skills div { margin-bottom: 10px }
@@ -273,8 +269,13 @@ nav { float: right }
 .forty:after        { width: 40% }
 
 
-/* Media Queries */
+.personal-skill h4 {
+    margin-bottom: 0;
+    font-size: 2em;
+    font-weight: 700;
+}
 
+/* Media Queries */
 
 
 @media all and (max-width: 901px) {
@@ -306,7 +307,8 @@ nav { float: right }
         margin-left: 10%;
     }
 
-    .second:after {
+    .third:after,
+    .forth:after {
         display: none;
     }
 
@@ -335,22 +337,13 @@ nav { float: right }
         margin-top: 0;
     }
 
-    .contact-position {
-        float: none;
-    }
+    .contact-position { float: none }
 
-    .left {
-        border-left: none;
-    }
+    .left { border-left: none }
 
-    .left:before {
-        display: none;
-    }
+    .left:before { display: none }
 
-    
-    .container .right {
-        margin-left: 0;
-    }
+    .container .right { margin-left: 0 }
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px)  {
@@ -358,5 +351,16 @@ nav { float: right }
         width: 100%;
         margin-bottom: 5px;
         margin-top: 5px;
+    }
+}
+
+@media all and (max-width: 390px) {
+    .right--name {
+        float: none;
+        display: block;
+    }
+
+    .right-percentage {
+        width: 100%;
     }
 }
