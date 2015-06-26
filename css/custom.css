@@ -243,15 +243,16 @@ nav { float: right }
 }
 
 
-.second-school p,
-.fifth-work p,
-.sixth-year {
+.second--year,
+.second--town,
+.fifth--year,
+.sixth--year {
     margin-bottom: 0;
 }
 
 .second--name,
-.fifth-name,
-.sixth-name {
+.fifth--name,
+.sixth--name {
     font-family: 'Roboto', Verdana, sans-serif;
     font-size: 1.8em;
     font-weight: 700;
@@ -332,7 +333,7 @@ nav { float: right }
     }
     
     .container .right {
-        border: none;
+        border-left: none;
         margin-left: 10%;
     }
 
@@ -370,11 +371,34 @@ nav { float: right }
 
     .contact-position { float: none }
 
-    .left { border-left: none }
+    .left {
+        border-left: none;
+        border-bottom: 1px solid #222;
+    }
 
     .left:before { display: none }
 
-    .container .right { margin-left: 0 }
+    .container .right {
+        margin-left: 0;
+        border-bottom: 1px solid #222;
+    }
+
+    .name h2,
+    .name h5,
+    .contact-position,
+    .first,
+    .second h3,
+    .second ul,
+    .third,
+    .forth,
+    .fifth,
+    .sixth {
+        text-align: center;
+    }
+
+    .right.sixth {
+        border-bottom: none;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px)  {
@@ -383,6 +407,8 @@ nav { float: right }
         margin-bottom: 5px;
         margin-top: 5px;
     }
+
+
 }
 
 @media all and (max-width: 390px) {
