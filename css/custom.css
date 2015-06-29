@@ -302,8 +302,20 @@ nav { float: right }
 
 .sixth,
 .fifth {
-    min-height: 300px;
+    min-height: 600px;
 }
+
+.hobbies h2 {
+    text-align: center;
+    color: #3B0A35;
+    margin-bottom: 0;
+}
+
+.hobie-images {
+    text-align: center;
+}
+
+.hobie-images img { max-width: 100% }
 
 /* Media Queries */
 
