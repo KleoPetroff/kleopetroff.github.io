@@ -3,6 +3,7 @@ layout: default
 ---
 <div class="container">
     <div class="row">
+        <h1 class="heading">Recent Posts</h1>
         <ul class="posts twelve column">
             {% for post in site.posts limit: 10 %}
                 <li class="clearfix"><h2><a class="{% if post.language == 'en' %}en{% else post.language == 'bg' %}bg{% endif %}" href="{{post.url}}">{{post.title}}</a></h2>
