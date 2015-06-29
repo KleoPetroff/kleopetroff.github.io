@@ -159,12 +159,13 @@ nav { float: right }
 
 /* Single Post */
 .post {
-    margin-top: 40px;
+    margin-top: 5em;
+    padding-bottom: 8em;
 }
 
 .post h1 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 1em;
     font-family: 'Roboto Slab', 'Roboto', Verdana, sans-serif;
 }
 
