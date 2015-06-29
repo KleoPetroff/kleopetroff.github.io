@@ -13,7 +13,10 @@ layout: compress
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,300|Roboto+Slab&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        {% include header.html %}
-        {{ content }}
+        <div class="wrapper">
+            {% include header.html %}
+            {{ content }}
+            {% include footer.html %}
+        </div>
     </body>
 </html>
