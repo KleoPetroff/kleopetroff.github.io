@@ -10,21 +10,22 @@ layout: compress
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <style>
-            .navigation li {
+            .navigation li,
+            .contact-list li{
                 padding: 10px 0;
             }
         </style>
-        <script>
-            var cb = function() {
-                var l = document.createElement('link'); l.rel = 'stylesheet';
-                l.href = '/assets/css/styles.min.css';
-                var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-            };
-            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                    webkitRequestAnimationFrame || msRequestAnimationFrame;
-            if (raf) raf(cb);
-            else window.addEventListener('load', cb);
-        </script>
+        <!--<script>-->
+            <!--var cb = function() {-->
+                <!--var l = document.createElement('link'); l.rel = 'stylesheet';-->
+                <!--l.href = '/assets/css/styles.min.css';-->
+                <!--var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);-->
+            <!--};-->
+            <!--var raf = requestAnimationFrame || mozRequestAnimationFrame ||-->
+                    <!--webkitRequestAnimationFrame || msRequestAnimationFrame;-->
+            <!--if (raf) raf(cb);-->
+            <!--else window.addEventListener('load', cb);-->
+        <!--</script>-->
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,300|Roboto+Slab&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
     </head>
     <body>
