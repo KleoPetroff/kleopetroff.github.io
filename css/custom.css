@@ -1,3 +1,51 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/roboto/Roboto-Regular.eot');
+    src: local('?'),
+         url('/assets/fonts/roboto/Roboto-Regular.woff') format('woff'),
+         url('/assets/fonts/roboto/Roboto-Regular.ttf') format('truetype'),
+         url('/assets/fonts/roboto/Roboto-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/roboto/Roboto-Bold.eot');
+    src: local('?'),
+    url('/assets/fonts/roboto/Roboto-Bold.woff') format('woff'),
+    url('/assets/fonts/roboto/Roboto-Bold.ttf') format('truetype'),
+    url('/assets/fonts/roboto/Roboto-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/roboto/Roboto-Bold.eot');
+    src: local('?'),
+    url('/assets/fonts/roboto/Roboto-Light.woff') format('woff'),
+    url('/assets/fonts/roboto/Roboto-Light.ttf') format('truetype'),
+    url('/assets/fonts/roboto/Roboto-Light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('/assets/fonts/roboto-slab/RobotoSlab-Regular.eot');
+    src: local('?'),
+    url('/assets/fonts/roboto-slab/RobotoSlab-Regular.woff') format('woff'),
+    url('/assets/fonts/roboto-slab/RobotoSlab-Regular.ttf') format('truetype'),
+    url('/assets/fonts/roboto-slab/RobotoSlab-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
 /*
  * Clearfix
  */
@@ -21,7 +69,6 @@ html {
 
 body {
     font-family: 'Roboto', Verdana, sans-serif;
-    font-size: 16px;
     height: 100%;
 }
 
@@ -95,7 +142,7 @@ nav { float: right }
 
 .navigation {
     text-align: right;
-    padding-top: 72px;
+    padding-top: 77px;
 }
 
 .navigation li {
@@ -128,6 +175,7 @@ nav { float: right }
     font-family: 'Roboto Slab', 'Roboto', Verdana, sans-serif;
     font-size: 1.9em;
     float: left;
+    margin-bottom: 1.3rem;
 }
 
 .posts li {
@@ -215,6 +263,10 @@ nav { float: right }
 
 .contact-list {
     list-style: none;
+}
+
+.contact-list li {
+    margin-bottom: 0;
 }
 
 .contact-list a {
