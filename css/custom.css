@@ -406,11 +406,19 @@ nav { float: right }
     font-weight: 700;
 }
 
-
 .sixth,
 .fifth {
     min-height: 600px;
 }
+
+/* Remove top margin */
+.personal-skill p,
+.second--field,
+.sixth--info,
+.fifth--position{
+    margin-top: 0;
+}
+
 
 .hobbies h2 {
     text-align: center;
