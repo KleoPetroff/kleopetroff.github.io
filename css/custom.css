@@ -174,8 +174,11 @@ nav { float: right }
 .posts h2 {
     font-family: 'Roboto Slab', 'Roboto', Verdana, sans-serif;
     font-size: 1.9em;
-    float: left;
     margin-bottom: 1.3rem;
+}
+
+.posts-description {
+    font-size: 0.85em;
 }
 
 .posts li {
@@ -435,6 +438,13 @@ nav { float: right }
 /* Media Queries */
 
 
+@media all and (max-width: 1200px) {
+    .date {
+        display: block;
+        float: none;
+    }
+}
+
 @media all and (max-width: 901px) {
     .date {
         float: none;
@@ -449,6 +459,10 @@ nav { float: right }
         margin-bottom: 0;
         display: block;
         float: none;
+    }
+
+    .posts-description {
+        text-align: center;
     }
     
     .posts h2 a  {
