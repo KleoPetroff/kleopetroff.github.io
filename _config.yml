@@ -2,4 +2,5 @@ title: Kleo Petrov
 markdown: kramdown
 permalink: pretty
 exclude: [gulpfile.js, node_modules, css]
-include: [.htaccess]
+
+highlighter: pygments
