@@ -179,11 +179,13 @@ nav { float: right }
 
 .posts-description {
     font-size: 0.85em;
+    max-width: 62em;
 }
 
 .posts li {
     display: inline-block;
     width: 100%;
+    margin-bottom: 2em;
 }
 
 .en,
