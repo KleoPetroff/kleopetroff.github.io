@@ -233,6 +233,11 @@ nav { float: right }
     font-family: 'Roboto Slab', 'Roboto', Verdana, sans-serif;
 }
 
+.post h2, 
+.post h3 {
+    margin-top: 2em;
+}
+
 /* About Us */
 
 .general {
