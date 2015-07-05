@@ -227,6 +227,11 @@ nav { float: right }
     margin-top: 1.6em;
 }
 
+/* Archive */
+
+.archive li { margin-bottom: 0 }
+.archive h2 { font-size: 1.7em }
+
 /* Single Post */
 .post {
     margin-top: 5em;
@@ -465,6 +470,11 @@ nav { float: right }
         text-align: center;
         margin-bottom: 10px;
         clear: both;
+    }
+
+    .archive li + li .date {
+        margin-bottom: 0;
+        margin-top: 3em;
     }
     
     .posts h2 {
