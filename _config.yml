@@ -4,3 +4,5 @@ permalink: pretty
 exclude: [gulpfile.js, node_modules, css]
 
 highlighter: pygments
+
+background: header-bg.jpg
