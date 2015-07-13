@@ -46,7 +46,7 @@ Google update their analytics javascript only a few times a year, judging from t
 
 ## Eliminating render-blocking CSS and Javascript
 
-Every CSS file, loaded the normal way, slows down the page rendering. Fixing this problem was quite easy though - I had to load the CSS before rendering the page:
+Every CSS file, loaded the normal way, slows down the page rendering. Fixing this problem was quite easy though - I had to load the CSS after rendering the page:
 
 
 {% highlight javascript linenos %}
