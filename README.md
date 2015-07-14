@@ -15,6 +15,4 @@ and
 
 * * *
 
-In the next few days I will write a detailed post about the whole journey from the hard start of the project, to the pleasant finish, so stay tuned!
-
-Meanwhile, you can check the website here - [kleopetrov.me](http://kleopetrov.me)
+You can check the website here - [kleopetrov.me](http://kleopetrov.me)
