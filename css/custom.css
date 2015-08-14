@@ -92,7 +92,7 @@ footer {
     left: 0;
 }
 
-footer h6 { 
+footer h6 {
     text-align: center;
     margin-bottom: 5px;
 }
@@ -216,7 +216,7 @@ nav { float: right }
 
 .date {
     float: right;
-    margin-top: 13px;
+    margin-top: 18px;
     font-size: .8em;
 }
 
@@ -246,7 +246,7 @@ nav { float: right }
     font-family: 'Roboto Slab', 'Roboto', Verdana, sans-serif;
 }
 
-.post h2, 
+.post h2,
 .post h3 {
     margin-top: 2em;
 }
@@ -478,7 +478,7 @@ nav { float: right }
         margin-bottom: 0;
         margin-top: 3em;
     }
-    
+
     .posts h2 {
         text-align: center;
         margin-bottom: 0;
@@ -489,7 +489,7 @@ nav { float: right }
     .posts-description {
         text-align: center;
     }
-    
+
     .posts h2 a  {
         clear: both;
         float: none;
@@ -500,7 +500,7 @@ nav { float: right }
         margin-left: 0;
         border-left: none;
     }
-    
+
     .container .right {
         border-left: none;
         margin-left: 10%;
