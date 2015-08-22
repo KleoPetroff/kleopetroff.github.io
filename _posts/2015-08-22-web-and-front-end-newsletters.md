@@ -33,7 +33,7 @@ The Changelog is a member supported blog, weekly newsletter and podcast that cov
 
 One e-mail each Friday with the most interesting news and posts about JavaScript, jobs openings etc.
 
-### [Five Minutes of JavaScript](https://fivejs.codeschool.com) - The latest news in the JavaScript community.
+### [Five Minutes of JavaScript](https://fivejs.codeschool.com) - the latest news in the JavaScript community.
 
 Produced and distributed by [Code School](codeschool.com), released every Thursday, this newsletter share news about podcasts with everything new about JavaScript.
 
@@ -55,11 +55,11 @@ curated by Zoran Jambor
 
 A free, once–weekly round-up of responsive design articles, tools, tips, tutorials and inspirational links.
 
-### [Front-End Front](http://frontendfront.com) - The most popular front-end stories, every week, in your inbox
+### [Front-End Front](http://frontendfront.com) - the most popular front-end stories, every week, in your inbox
 
 Front-end Front is a place where front-end developers can ask questions, share interesting links, and show their work to the rest of the community. Have you heard of Hacker News or Designer News? It’s something like that, but focused more on front-end.
 
-### [Frontends](http://www.frontends.org) - Receive the best of Frontends right in your inbox.
+### [Frontends](http://www.frontends.org) - receive the best of Frontends right in your inbox.
 
 Share your work, ask for feedback & engage in discussions with other passionate web developers.
 
@@ -71,7 +71,7 @@ Each issue features a brief tip or tutorial, followed by a weekly round-up of va
 
 A free weekly email, for busy people who care about people, culture and leadership.
 
-### [Web Development Reading List](https://wdrl.info) - A handcrafted, carefully selected list of web development related resources.
+### [Web Development Reading List](https://wdrl.info) - a handcrafted, carefully selected list of web development related resources.
 
 This project is an attempt to filter and concatenate all the web development links that pop up every single day. The Web Development Reading List aims to filter those links for you so you stay up to date about the latest technologies and techniques but don’t need to read every link you find in the wild.
 
