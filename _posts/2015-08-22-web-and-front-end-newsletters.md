@@ -5,25 +5,23 @@ description: Keeping up to date with the latest technologies and is hard these d
 language: en
 ---
 
-Keeping up to date with the latest technologies and is hard these days. It's the golden age of informational technology and every day something new emerges - tutorials, frameworks, libraries, updates etc. So how to keep you stream of information flow? Here's my experience...
+Keeping up to date with the latest technologies is hard these days. It's the golden age of informational technology and every day something new emerges - tutorials, frameworks, libraries, updates etc. So how to keep your stream of information flowing? Here's my experience...
 
 ##  My first approach
 
-Searching and reading through numerous resources and websites were a bit tedious, but was doing the job - searching for an hour or two, I would find an interesting post and save it as a bookmark. But after several months, I was left with 200+ bookmarks, that I couldn't manage. It was time for a change.
+Searching and reading through numerous resources and websites were a bit tedious, but was doing the job back in time - searching for an hour or two, I would find an interesting post, read it and save it as a bookmark for later reference. But after several months, I was left with 200+ bookmarks, that I couldn't manage. It was time for a change.
 
-## And then - RSS readers
+## and then - RSS readers
 
 I started using [Feedly](http://feedly.com) three years ago. Feedly is a news aggregator application, which compiles news feeds from a variety of online sources for the user to customize and share.
 
-It was great - Feedly was showing me only the websites, that I was interested in and saving the most important posts and news was as easy as clicking "Save". But something was missing. There was still a lot of searching and filtering, so I had no other choice, but to search for even more optimized way.
+It was great - Feedly was showing me only the websites, that I was interested in and saving the most important posts and news was as easy as clicking "Save". But something was missing. There was still a lot of searching and filtering, so I had no other choice, but to find another, better way.
 
 ## Newsletters
 
-The first newsletter I ever encountered was the [Smashing Magazine Newsletter](http://www.smashingmagazine.com/the-smashing-newsletter/) - every Tuesday, an email with the most interesting post from the website was send to my account. It was perfect - no more searching, filtering and time wasting.
+The first newsletter I ever encountered was the [Smashing Magazine Newsletter](http://www.smashingmagazine.com/the-smashing-newsletter/) - every Tuesday, an email with the most interesting posts from the website was send to my account. It was perfect - no more searching, filtering and time wasting. I found what I was looking for!
 
-The great thing about newsletters is that you get only the most relevant, up to date news, without being flooded with emails, you can't even read.
-
-So, without any further ado, let me present give you my 2 year's collection of Web and Front-End newsletters:
+One of the coolest things about the newsletters is that you get only the most relevant, up to date news, without being flooded with emails, you can't even manage to read. So, without any further ado, let me present give you my 2 year's collection of Web and Front-End newsletters:
 
 ### [The Changelog](https://changelog.com) - open source moves fast. Keep up.
 
