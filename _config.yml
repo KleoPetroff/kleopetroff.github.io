@@ -1,7 +1,7 @@
 title: Kleo Petrov - Front-End Developer
 markdown: kramdown
 permalink: pretty
-exclude: [gulpfile.js, node_modules, css]
+exclude: [gulpfile.js, node_modules, assets/_scss]
 
 highlighter: pygments
 
