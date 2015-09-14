@@ -1,0 +1,52 @@
+
+.posts {
+    list-style: none;
+    margin-top: 3em;
+    padding-bottom: 8em;
+}
+
+.posts h2 {
+    font-size: 3rem;
+    margin-bottom: 1.3rem;
+}
+
+.posts-description {
+    font-size: 1em;
+    max-width: 62em;
+    font-weight: 300;
+}
+
+.posts li {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.en,
+.bg {
+    float: left;
+    text-decoration: none;
+    padding-right: 35px;
+    line-height: 1;
+    color: $main-color;
+
+    &:hover {
+        @include transition(all, .2s, ease-in);
+        color: #5F5F5F;
+    }
+}
+
+.en { background: url("/assets/images/en.png") no-repeat right center }
+.bg { background: url('/assets/images/bg.png') no-repeat right center }
+
+.date {
+    float: right;
+    margin-top: 18px;
+    font-size: .8em;
+}
+
+.heading {
+    font-family: 'Roboto Slab', 'Roboto', Verdana, sans-serif;
+    text-align: center;
+    margin-top: 1.6em;
+}

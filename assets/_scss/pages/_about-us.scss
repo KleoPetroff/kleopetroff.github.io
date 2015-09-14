@@ -1,0 +1,213 @@
+
+/* About Us */
+
+.general {
+    border-bottom: 1px solid #222;
+    position: relative;
+}
+
+.general:before,
+.info:before{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: -5px;
+    left: 50%;
+    right: 50%;
+    content: "";
+    background: #222;
+    border-radius: 50%;
+}
+
+.name h2 {
+    font-size: 4em;
+    font-family: $main-heading-font;
+    margin-bottom: 0;
+    color: $main-color;
+}
+
+.name h5 {
+    color: $secondary-color;
+}
+
+.contact h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: $main-color;
+}
+
+.contact-list {
+    list-style: none;
+
+    & li {
+        margin-bottom: 0;
+        color: $secondary-color;
+    }
+
+    a {
+        margin-left: 10px;
+        text-decoration: none;
+        color: $main-color;
+
+        &:hover {
+            color: #531B4C;
+        }
+    }
+}
+
+.info {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #222;
+    position: relative;
+}
+
+.contact-position { float: right }
+
+.container .left,
+.container .right{
+    margin-top: 40px;
+    padding-left: 20px;
+    border-left: 1px solid #222;
+    position: relative;
+    margin-left: 8.66666666667%;
+}
+
+.container .left:first-of-type {
+    margin-right: 4%;
+    margin-left: 8.66666666667%
+}
+
+.left:before,
+.right:before{
+    position: absolute;
+    width: 160px;
+    height: 111px;
+    content: "";
+    left: -95px;
+}
+
+.left h3,
+.right h3 {
+    color: $main-color;
+    font-size: 3em;
+}
+
+.third,
+.fifth {
+    clear: both;
+    margin-right: 4%;
+}
+
+.first:before  { background: url("/assets/images/about.png") no-repeat      }
+.second:before { background: url("/assets/images/skills.png") no-repeat     }
+.third:before  { background: url("/assets/images/school.png") no-repeat     }
+.forth:before  { background: url("/assets/images/personal.png") no-repeat   }
+.fifth:before  { background: url("/assets/images/experience.png") no-repeat }
+.sixth:before  { background: url("/assets/images/awards.png") no-repeat     }
+
+.third:after,
+.forth:after,
+.fifth:after,
+.sixth:after {
+    height: 15em;
+    top: -15em;
+    left: -1px;
+    width: 1px;
+    background: #000;
+    content: "";
+    position: absolute;
+}
+
+.second-school + .second-school,
+.fifth-work + .fifth-work,
+.sixth-award + .sixth-award {
+    margin-top: 5em;
+}
+
+
+.second--year,
+.second--town,
+.fifth--year,
+.sixth--year {
+    margin-bottom: 0;
+    font-size: 1em;
+}
+
+.second--name,
+.fifth--name,
+.sixth--name {
+    font-family: $main-heading-font;
+    color: $secondary-color;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.right-skills div { margin-bottom: 10px }
+.right-skills .separate { margin-bottom: 5em }
+.right-skills ul { list-style: none }
+
+.right--name {
+    min-width: 30%;
+    float: left;
+    font-size: 1em;
+}
+
+.right-percentage {
+    float: right;
+    height: 24px;
+    background: #f0f0f0;
+    width: 70%;
+    position: relative;
+}
+
+.right-percentage:after {
+    position: absolute;
+    background: #212221;
+    right: 0;
+    height: 100%;
+    content: "";
+}
+
+.ninety-five:after  { width: 95% }
+.ninety:after       { width: 90% }
+.eighty-four:after  { width: 84% }
+.seventy-nine:after { width: 78% }
+.fifty-five:after   { width: 55% }
+.fifty:after        { width: 50% }
+.forty:after        { width: 40% }
+
+
+.personal-skill h4 {
+    color: $secondary-color;
+    margin-bottom: 0;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.sixth,
+.fifth {
+    min-height: 600px;
+}
+
+/* Remove top margin */
+.personal-skill p,
+.second--field,
+.sixth--info,
+.fifth--position{
+    margin-top: 0;
+}
+
+
+.hobbies h2 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.hobie-images {
+    text-align: center;
+    padding-bottom: 10em;
+}
+
+.hobie-images img { max-width: 100% }

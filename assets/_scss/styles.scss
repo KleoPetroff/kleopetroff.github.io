@@ -1,0 +1,23 @@
+// Main SCSS file
+
+@import "utils/syntax";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/helpers";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/about-us";
+@import "pages/archive";
+@import "pages/posts";
+@import "pages/single-post";
+
+@import "vendors/normalize";
+@import "vendors/skeleton";
+@import "vendors/clearfix";
+@import "vendors/media-queries";
+
+@import "base/base";
+@import "base/fonts";
+@import "base/typography";

@@ -1,0 +1,49 @@
+header {
+    background: no-repeat center top;
+    min-height: 200px;
+    padding: 36px 0;
+}
+
+.logo {
+    font: 3em/1 'Roboto Slab', Verdana, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    margin-top: 60px;
+}
+
+.logo:hover {
+    text-shadow: 2px 1px 1px rgba(99, 47, 93, 1);
+    color: #fff;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+nav { float: right }
+
+.navigation {
+    text-align: right;
+    padding-top: 77px;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.navigation li a {
+    font: 1.2em/1 'Roboto Slab', Verdana, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    text-decoration: underline;
+    text-shadow: 2px 1px 1px rgba(99, 47, 93, 1);
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}

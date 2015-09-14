@@ -1,0 +1,130 @@
+@media all and (max-width: 1200px) {
+    .date {
+        display: block;
+        float: none;
+    }
+}
+
+@media all and (max-width: 901px) {
+    .date {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+        clear: both;
+    }
+
+    .archive li + li .date {
+        margin-bottom: 0;
+        margin-top: 3em;
+    }
+
+    .posts h2 {
+        text-align: center;
+        margin-bottom: 0;
+        display: block;
+        float: none;
+    }
+
+    .posts-description {
+        text-align: center;
+    }
+
+    .posts h2 a  {
+        clear: both;
+        float: none;
+    }
+
+    .container .left:first-of-type,
+    .container .left{
+        margin-left: 0;
+        border-left: none;
+    }
+
+    .container .right {
+        border-left: none;
+        margin-left: 10%;
+    }
+
+    .third:after,
+    .forth:after,
+    .fifth:after,
+    .sixth:after {
+        display: none;
+    }
+
+    .left:before,
+    .right:before {
+        background: none;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .navigation {
+        text-align: center;
+        display: block;
+    }
+
+    nav
+    {
+        clear: both;
+        float: none;
+    }
+
+    .logo {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .contact-position { float: none }
+
+    .left {
+        border-left: none;
+        border-bottom: 1px solid #222;
+    }
+
+    .left:before { display: none }
+
+    .container .right {
+        margin-left: 0;
+        border-bottom: 1px solid #222;
+    }
+
+    .name h2,
+    .name h5,
+    .contact-position,
+    .first,
+    .second h3,
+    .second ul,
+    .third,
+    .forth,
+    .fifth,
+    .sixth {
+        text-align: center;
+    }
+
+    .right.sixth {
+        border-bottom: none;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px)  {
+    .right-percentage {
+        width: 100%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+}
+
+@media all and (max-width: 390px) {
+    .right--name {
+        float: none;
+        display: block;
+    }
+
+    .right-percentage {
+        width: 100%;
+    }
+}

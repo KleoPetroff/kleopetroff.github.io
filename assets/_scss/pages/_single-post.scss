@@ -1,0 +1,32 @@
+
+/* Single Post */
+.post {
+    margin-top: 5em;
+    padding-bottom: 8em;
+}
+
+.post h1 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 4em;
+}
+
+.post h2,
+.post h3 {
+    margin-top: 1em;
+    font-size: 2.5rem;
+}
+
+.post h4,
+.post h5 {
+    font-size: 2em;
+}
+
+.post a {
+    @include transition(all, .3s, ease-in);
+    color: $main-color;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
