@@ -1,49 +1,39 @@
 header {
     background: no-repeat center top;
-    min-height: 200px;
     padding: 36px 0;
 }
 
 .logo {
-    font: 3em/1 'Roboto Slab', Verdana, sans-serif;
-    color: #fff;
+    font-family: 'Lato';
+    font-size: 3em;
+    font-weight: 700;
+    color: $main-color;
     text-decoration: none;
     float: left;
-    margin-top: 60px;
+
+    &:hover {
+        color: $main-color;
+    }
 }
 
-.logo:hover {
-    text-shadow: 2px 1px 1px rgba(99, 47, 93, 1);
-    color: #fff;
-    -webkit-transition: all .2s ease-in;
-    -moz-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    transition: all .2s ease-in;
-}
-
-nav { float: right }
+.header-navigation { float: right }
 
 .navigation {
     text-align: right;
-    padding-top: 77px;
-}
+    margin-top: 24px;
 
-.navigation li {
-    display: inline-block;
-    margin: 0 8px;
-}
+    & li {
+        display: inline-block;
+        margin: 0 10px;
+    }
 
-.navigation li a {
-    font: 1.2em/1 'Roboto Slab', Verdana, sans-serif;
-    color: #fff;
-    text-decoration: none;
-}
+    & li a {
+        font-size: 1.3em;
+        color: $secondary-color;
+        text-decoration: none;
+    }
 
-.navigation li a:hover {
-    text-decoration: underline;
-    text-shadow: 2px 1px 1px rgba(99, 47, 93, 1);
-    -webkit-transition: all .2s ease-in;
-    -moz-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    transition: all .2s ease-in;
+    li a:hover {
+        color: $main-color;
+    }
 }

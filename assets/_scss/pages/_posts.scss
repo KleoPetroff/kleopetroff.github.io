@@ -1,4 +1,9 @@
 
+.heading {
+    text-align: center;
+    margin-top: 1em;
+}
+
 .posts {
     list-style: none;
     margin-top: 3em;
@@ -43,10 +48,4 @@
     float: right;
     margin-top: 18px;
     font-size: .8em;
-}
-
-.heading {
-    font-family: 'Roboto Slab', 'Roboto', Verdana, sans-serif;
-    text-align: center;
-    margin-top: 1.6em;
 }
