@@ -6,10 +6,19 @@ layout: default
         <h1 class="heading">Recent Posts</h1>
         <ul class="posts twelve column">
             {% for post in site.posts limit: 5 %}
+
+            {% assign minutes = post.content | number_of_words | divided_by: 180 %}
+            {% if minutes == 0 %}
+              {% assign read-time = site.var_less_than_a_minute_read %}
+            {% else %}
+              {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
+            {% endif %}
                 <li>
-                    <span class="date">{{post.date | date_to_string }}</span>
-                    <h2 class="clearfix"><a class="{% if post.language == 'en' %}en{% else post.language == 'bg' %}bg{% endif %}" href="{{post.url}}">{{post.title}}</a></h2>
-                    <p class="posts-description">{{post.description}}</p>
+                    <article>
+                        <span class="meta">{{post.date | date_to_string }} • {{ read-time }} min read</span>
+                        <h2 class="clearfix"><a class="post-title" href="{{post.url}}">{{post.title}}</a></h2>
+                        <p class="posts-description">{{post.description}}</p>
+                    </article>
                 </li>
             {% endfor %}
         </ul>
