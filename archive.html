@@ -6,13 +6,20 @@ title: Archive - Kleo Petrov - Front-End Developer
 <div class="container">
     <div class="row">
         <h1 class="heading">Archive</h1>
-        <ul class="posts twelve column archive">
-            {% for post in site.posts limit: 10 %}
-            <li>
-                <span class="date">{{post.date | date_to_string }}</span>
-                <h2 class="clearfix"><a class="{% if post.language == 'en' %}en{% else post.language == 'bg' %}bg{% endif %}" href="{{post.url}}">{{post.title}}</a></h2>
-            </li>
+        <div class="posts twelve column">
+            {% for post in site.posts %}
+
+            {% unless post.next %}
+              <h3 class="archive-year">{{ post.date | date: '%Y' }}</h3>
+            {% else %}
+              {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+              {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+              {% if year != nyear %}
+                <h3>{{ post.date | date_to_string }}</h3>
+              {% endif %}
+            {% endunless %}
+                <p><a class="archive-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><small class="archive-meta"> {{ post.date | date_to_string }}</small></p>
             {% endfor %}
-        </ul>
+        </div>
     </div>
 </div>

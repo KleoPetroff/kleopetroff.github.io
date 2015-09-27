@@ -5,3 +5,28 @@
     font-size: 1.5em;
     margin-bottom: 0;
 }
+.archive-year {
+    font-size: 3rem;
+}
+
+.archive-post {
+    font-size: 1.425em;
+    color: $main-color;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.archive-meta {
+    margin-left: 5px;
+    font-size: 1.2rem;
+    color: $secondary-color;
+
+    &:before {
+        content: "•";
+        position: relative;
+        width: 20px;
+        height: 100%;
+    }
+}
