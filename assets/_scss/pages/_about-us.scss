@@ -92,6 +92,9 @@
     color: $main-color;
     font-size: 3em;
 }
+.first p {
+    font-size: 1.25em;
+}
 
 .third,
 .fifth {
@@ -110,11 +113,11 @@
 .forth:after,
 .fifth:after,
 .sixth:after {
-    height: 15em;
+    min-height: 60em;
     top: -15em;
     left: -1px;
     width: 1px;
-    background: #000;
+    background: #212221;
     content: "";
     position: absolute;
 }
@@ -138,10 +141,10 @@
 .fifth--name,
 .sixth--name {
     font-family: $main-heading-font;
-    color: $secondary-color;
+    color: $main-color;
     font-size: 1.9rem;
     font-weight: 700;
-    margin-bottom: 0.5em;
+    margin-bottom: 0;
 }
 
 .right-skills div { margin-bottom: 10px }
@@ -180,7 +183,7 @@
 
 
 .personal-skill h4 {
-    color: $secondary-color;
+    color: $main-color;
     margin-bottom: 0;
     font-size: 2em;
     font-weight: 700;
@@ -191,14 +194,18 @@
     min-height: 600px;
 }
 
+.sixth--description {
+    font-size: 1.25em;
+}
+
 /* Remove top margin */
 .personal-skill p,
 .second--field,
 .sixth--info,
 .fifth--position{
     margin-top: 0;
+    font-size: 1.25em;
 }
-
 
 .hobbies h2 {
     text-align: center;
