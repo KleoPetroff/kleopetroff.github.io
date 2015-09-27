@@ -5,13 +5,26 @@
     }
 }
 
-@media all and (max-width: 901px) {
-    .date {
-        float: none;
+@media all and (max-width: 925px) {
+    .name.nine.columns {
+        width: 100%;
         display: block;
         text-align: center;
+    }
+
+    .three.columns.contact,
+    .contact-position {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 901px) {
+    .meta {
+        text-align: center;
         margin-bottom: 10px;
-        clear: both;
     }
 
     .archive li + li .date {
@@ -65,8 +78,7 @@
         display: block;
     }
 
-    nav
-    {
+    .header-navigation {
         clear: both;
         float: none;
     }
@@ -108,6 +120,25 @@
     .right.sixth {
         border-bottom: none;
     }
+
+    .archive-post {
+        display: block;
+    }
+
+    .archive-year,
+    .archive-post {
+        text-align: center;
+    }
+
+    .archive-meta {
+        text-align: center;
+        display: block;
+        margin-top: 5px;
+        &:before {
+            display: none;
+        }
+    }
+
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px)  {
