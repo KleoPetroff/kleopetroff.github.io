@@ -6,3 +6,5 @@ exclude: [gulpfile.js, node_modules, assets/_scss]
 highlighter: pygments
 
 background: header-bg.jpg
+
+paginate: 10
