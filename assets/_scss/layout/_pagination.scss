@@ -1,0 +1,31 @@
+.pagination {
+    padding-bottom: 8em;
+}
+
+.previous { float: left }
+.next     { float: right }
+
+.previous,
+.next {
+    width: 130px;
+    text-align: center;
+    display: none;
+    padding: 15px 10px;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    color: #5d5d5d;
+    text-decoration: none;
+}
+
+a.next,
+a.previous {
+    @include transition(all, .2s, ease-in);
+    display: inline-block;
+    background: #f1f1f1;
+}
+
+a.previous:hover,
+a.next:hover {
+    color: #5d5d5d;
+    background: #e1e1e1;
+}
