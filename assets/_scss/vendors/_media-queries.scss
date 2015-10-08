@@ -1,4 +1,9 @@
 @media all and (max-width: 1200px) {
+    img,
+    iframe {
+        max-width: 100%;
+    }
+
     .date {
         display: block;
         float: none;
@@ -6,6 +11,53 @@
 }
 
 @media all and (max-width: 925px) {
+    // Single posts smaller font-size on mobile
+    .post p {
+        font-size: 1em;
+    }
+
+    .post h1 {
+        font-size: 2.25em;
+    }
+
+    .post h2,
+    .post h3 {
+        font-size: 1.85em;
+    }
+
+    // Home page posts headings
+    .heading {
+        font-size: 3em;
+    }
+
+    .posts li {
+        margin-bottom: 2rem;
+    }
+
+    .posts h2 {
+        font-size: 1.85em;
+        text-align: center;
+        margin-bottom: 0;
+        display: block;
+        float: none;
+    }
+
+    .posts h2 a  {
+        clear: both;
+        float: none;
+    }
+
+    .posts-description {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .meta {
+        font-size: 0.85em;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
     .name.nine.columns {
         width: 100%;
         display: block;
@@ -22,41 +74,24 @@
 }
 
 @media all and (max-width: 901px) {
-    .meta {
-        text-align: center;
-        margin-bottom: 10px;
-    }
 
     .archive li + li .date {
         margin-bottom: 0;
         margin-top: 3em;
     }
 
-    .posts h2 {
-        text-align: center;
-        margin-bottom: 0;
-        display: block;
-        float: none;
-    }
-
-    .posts-description {
-        text-align: center;
-    }
-
-    .posts h2 a  {
-        clear: both;
-        float: none;
-    }
 
     .container .left:first-of-type,
     .container .left{
         margin-left: 0;
         border-left: none;
+        padding-left: 0;
     }
 
     .container .right {
         border-left: none;
         margin-left: 10%;
+        padding-left: 0;
     }
 
     .third:after,
