@@ -211,7 +211,10 @@
 
 .hobie-images {
     text-align: center;
-    padding-bottom: 10em;
+    padding-bottom: 8em;
 }
 
-.hobie-images img { max-width: 100% }
+.hobie-images img {
+    max-width: 100%;
+    margin-bottom: 35px;
+}
