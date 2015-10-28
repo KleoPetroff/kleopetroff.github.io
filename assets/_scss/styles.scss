@@ -1,9 +1,14 @@
 // Main SCSS file
 
-@import "utils/syntax";
+@import "base/fonts";
+
 @import "utils/variables";
 @import "utils/mixins";
 @import "utils/helpers";
+@import "utils/syntax";
+
+@import "base/base";
+@import "base/typography";
 
 @import "layout/header";
 @import "layout/footer";
@@ -18,7 +23,3 @@
 @import "vendors/skeleton";
 @import "vendors/clearfix";
 @import "vendors/media-queries";
-
-@import "base/base";
-@import "base/fonts";
-@import "base/typography";
