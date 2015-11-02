@@ -8,3 +8,5 @@ highlighter: pygments
 background: header-bg.jpg
 
 paginate: 10
+
+less_than_minute: 1
