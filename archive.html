@@ -18,7 +18,7 @@ title: Archive - Kleo Petrov - Front-End Developer
                 <h3>{{ post.date | date_to_string }}</h3>
               {% endif %}
             {% endunless %}
-                <p><a class="archive-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><small class="archive-meta"> {{ post.date | date_to_string }}</small></p>
+                <p class="archive-paragraph"><a class="archive-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><small class="archive-meta"> {{ post.date | date_to_string }}</small></p>
             {% endfor %}
         </div>
     </div>
