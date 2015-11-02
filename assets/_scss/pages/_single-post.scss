@@ -5,9 +5,11 @@
     padding-bottom: 8em;
 }
 
-.post p {
-    font-size: 1.45em;
+.post p,
+.post li {
+    font-size: 1.35em;
     line-height: 1.7;
+    margin-bottom: 0;
 }
 
 .post h1 {
@@ -34,4 +36,9 @@
     &:hover {
         color: $secondary-color;
     }
+}
+
+// Disqus Posts
+#disqus_thread {
+    margin-top: 10em;
 }
