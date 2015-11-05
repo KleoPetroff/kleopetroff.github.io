@@ -28,11 +28,7 @@
     margin-left: 5px;
     font-size: 1.2rem;
     color: $secondary-color;
+    float: right;
 
-    &:before {
-        content: "•";
-        position: relative;
-        width: 20px;
-        height: 100%;
-    }
+
 }

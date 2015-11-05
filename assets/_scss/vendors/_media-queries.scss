@@ -10,9 +10,10 @@
     }
 }
 
-@media all and (max-width: 925px) {
+@media all and (max-width: 950px) {
     // Single posts smaller font-size on mobile
-    .post p {
+    .post p,
+    .post li {
         font-size: 1em;
     }
 
@@ -71,15 +72,6 @@
         margin-left: 0;
         text-align: center;
     }
-}
-
-@media all and (max-width: 901px) {
-
-    .archive li + li .date {
-        margin-bottom: 0;
-        margin-top: 3em;
-    }
-
 
     .container .left:first-of-type,
     .container .left{
@@ -104,6 +96,36 @@
     .left:before,
     .right:before {
         background: none;
+    }
+
+    .column.archive {
+        margin-left: 0;
+    }
+
+    .archive li + li .date {
+        margin-bottom: 0;
+        margin-top: 3em;
+    }
+
+
+    .archive-post {
+        display: block;
+    }
+
+    .archive-year,
+    .archive-post {
+        text-align: center;
+    }
+
+    .archive-meta {
+        text-align: center;
+        display: block;
+        margin-top: 5px;
+        float: none;
+
+        &:before {
+            display: none;
+        }
     }
 }
 
@@ -156,23 +178,7 @@
         border-bottom: none;
     }
 
-    .archive-post {
-        display: block;
-    }
 
-    .archive-year,
-    .archive-post {
-        text-align: center;
-    }
-
-    .archive-meta {
-        text-align: center;
-        display: block;
-        margin-top: 5px;
-        &:before {
-            display: none;
-        }
-    }
 
 }
 
