@@ -36,9 +36,9 @@ var myRevealingModulePattern = (function() {
 
     // Обект с указатели към частните функции и променливи
     return {
-        setName = publicSetName,
-        greeting = publicVariable,
-        getName = publicGetName
+        setName: publicSetName,
+        greeting: publicVariable,
+        getName: publicGetName
     };
 
     console.log(myRevealingModulePattern.setName('Chris Price'));
