@@ -40,11 +40,12 @@ var myRevealingModulePattern = (function() {
         greeting: publicVariable,
         getName: publicGetName
     };
-
-    console.log(myRevealingModulePattern.setName('Chris Price'));
-    console.log(myRevealingModulePattern.getName());
-    console.log(myRevealingModulePattern.greeting);
 }());
+
+console.log(myRevealingModulePattern.setName('Chris Price'));
+console.log(myRevealingModulePattern.getName());
+console.log(myRevealingModulePattern.greeting);
+
 {% endhighlight %}
 
 ## Предимства
