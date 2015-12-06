@@ -1,39 +1,5 @@
-header {
-    background: no-repeat center top;
-    padding: 36px 0;
-}
+.logo:hover { color: $main-color }
 
-.logo {
-    font-family: "Lato", Verdana, sans-serif;
-    font-size: 3em;
-    font-weight: 900;
+.navigation li a:hover {
     color: $main-color;
-    text-decoration: none;
-    float: left;
-
-    &:hover {
-        color: $main-color;
-    }
-}
-
-.header-navigation { float: right }
-
-.navigation {
-    text-align: right;
-    margin-top: 20px;
-
-    & li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-
-    & li a {
-        font-size: 1.6em;
-        color: $secondary-color;
-        text-decoration: none;
-    }
-
-    li a:hover {
-        color: $main-color;
-    }
 }

@@ -1,25 +1,3 @@
-
-.heading {
-    text-align: center;
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-}
-
-.posts {
-    list-style: none;
-}
-
-.posts h2 {
-    font-size: 2.9rem;
-    margin-bottom: 1.3rem;
-}
-
-.posts-description {
-    font-size: 1.35em;
-    max-width: 62em;
-    font-weight: 300;
-}
-
 .posts li {
     display: inline-block;
     width: 100%;
@@ -32,16 +10,9 @@
     }
 }
 
-.post-title {
-    float: left;
-    text-decoration: none;
-    line-height: 1;
-    color: $main-color;
-
-    &:hover {
-        @include transition(all, .2s, ease-in);
-        color: #5F5F5F;
-    }
+.post-title:hover {
+    @include transition(all, .2s, ease-in);
+    color: #5F5F5F;
 }
 
 .meta {
