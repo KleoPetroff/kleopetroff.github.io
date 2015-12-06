@@ -21,11 +21,6 @@ layout: compress
 
         <!--[if lt IE 10]> <link rel="stylesheet" href="/assets/css/styles.min.css"/> <![endif]-->
         <style>
-            .navigation li,
-            .contact-list li {
-                padding: 0 0 1rem;
-            }
-
             html { height: 100%; font-family: sans-serif; }
             body { font-family: Merriweather, Verdana, sans-serif; font-size: 16px; font-weight: 300; line-height: 1.35; color: #383838; margin: 0; }
             .wrapper { position: relative; min-height: 100%; }
@@ -71,7 +66,7 @@ layout: compress
         </script>
     </head>
     <body>
-        <div class="wrapper">
+        <div id="hidden" class="wrapper" style="display: none;">
             {% include header.html %}
             {{ content }}
             {% include footer.html %}
@@ -85,6 +80,9 @@ layout: compress
             ga('create', 'UA-64685267-1', 'auto');
             ga('send', 'pageview');
 
+        </script>
+        <script>
+           window.onload = function () { document.getElementById('hidden').style.display = 'block' }
         </script>
     </body>
 </html>
