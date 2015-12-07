@@ -26,7 +26,7 @@ console.log(JSON.stringify(todo2)) // will log the object {"title": "Check the c
 
 ## Initialization
 
-The initialize() method is called when a new instance of the model is created. Its use is optional.
+The `initialize()` method is called when a new instance of the model is created. Its use is optional.
 
 {% highlight javascript %}
 var Todo = Backbone.Model.extend({
@@ -236,7 +236,7 @@ Person.unset('name' {validate: true}) // false
 
 Above, we also use the `unset()` method, which removes an attribute by deleting it from the internal model attributes hash.
 
-Validation functions can be as simple or complex as necessary.If the attributes provided are valid, nothing should be returned from `validate()`. If the are invalid, an error value should be returned instead:
+Validation functions can be as simple or complex as necessary.If the attributes provided are valid, nothing should be returned from `validate()`. If they are invalid, an error value should be returned instead:
 
 - An `invalid` event will be triggered, setting the `validationError` property on the model with the value which is returned by this method.
 - `save()` will not continue and the attributes of the model will not be modified on the server.
