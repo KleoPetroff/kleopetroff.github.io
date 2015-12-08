@@ -16,7 +16,7 @@ Creating a new view is similar to creating a new model we need to extend `Backbo
 var TodoView = Backbone.View.extend({
     tagName: 'span',
     
-    todoTpl = _.template('Example template'),
+    todoTpl: _.template('Example template'),
     
     events: {
         'dbclick label': 'edit',
