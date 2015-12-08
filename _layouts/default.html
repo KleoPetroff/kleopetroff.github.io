@@ -52,6 +52,16 @@ layout: compress
             .previous { float: left; }
             .next     { float: right }
             .previous, .next { width: 130px; text-align: center; display: none; padding: 15px 10px; border: 1px solid #c1c1c1; border-radius: 5px; color: #5d5d5d; text-decoration: none; }
+            @media all and (max-width: 768px) {
+                .logo { float: none; display: block; text-align: center; margin-top: 0; }
+                .header-navigation { float: none }
+                .navigation { text-align: center; display: block;}
+                .container { width: 90% }
+                .column, .columns { margin-left: 0 }
+            }
+            @media all and (max-width: 950px) {
+                .posts h2 { font-size: 1.85em }
+            }
         </style>
         <script>
             var cb = function() {
