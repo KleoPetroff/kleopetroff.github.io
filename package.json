@@ -1,0 +1,29 @@
+{
+  "name": "kleopetroff.github.io",
+  "version": "1.0.0",
+  "description": "The personal website of Kliment Petrov",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://KleoPetroff:kliment1991@github.com/KleoPetroff/kleopetroff.github.io.git"
+  },
+  "keywords": [
+    "jekyll",
+    "personal",
+    "website"
+  ],
+  "author": "Kliment Petrov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KleoPetroff/kleopetroff.github.io/issues"
+  },
+  "homepage": "https://github.com/KleoPetroff/kleopetroff.github.io#readme",
+  "devDependencies": {
+    "cli-color": "^1.1.0",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.0.1",
+  }
+}
