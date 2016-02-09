@@ -45,9 +45,7 @@
     @include transition(all, .3s, ease-in);
     color: $main-color;
 
-    &:hover {
-        color: $secondary-color;
-    }
+    &:hover { color: $secondary-color }
 }
 
 // Disqus Posts

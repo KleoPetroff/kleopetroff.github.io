@@ -26,9 +26,7 @@
     color: $main-color;
 }
 
-.name h5 {
-    color: $secondary-color;
-}
+.name h5 { color: $secondary-color }
 
 .contact h4 {
     margin-top: 10px;
@@ -92,9 +90,7 @@
     color: $main-color;
     font-size: 3em;
 }
-.first p {
-    font-size: 1.25em;
-}
+.first p { font-size: 1.25em }
 
 .third,
 .fifth {
@@ -175,7 +171,7 @@
 .ninety:after       { width: 90% }
 .eighty-four:after  { width: 84% }
 .seventy-nine:after { width: 78% }
-.seventy-five:after      { width: 75% }
+.seventy-five:after { width: 75% }
 .fifty:after        { width: 50% }
 .forty:after        { width: 40% }
 
@@ -191,9 +187,7 @@
     min-height: 600px;
 }
 
-.sixth--description {
-    font-size: 1.25em;
-}
+.sixth--description { font-size: 1.25em }
 
 /* Remove top margin */
 .personal-skill p,
