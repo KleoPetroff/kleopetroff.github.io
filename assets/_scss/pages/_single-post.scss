@@ -7,13 +7,21 @@
 
 .post p,
 .post li {
-    font-size: 1.35em;
+    font-size: 1.25em;
     line-height: 1.7;
     margin-bottom: 0;
 }
 
-.post ul {
+.post ol li {
+    & li { font-size: 1.1em }
+    & ul { margin-top: 0 }
+    &:last-child { margin-bottom: 1em }
+}
+
+.post ul,
+.post ol {
     margin-top: 1em;
+    margin-bottom: 0;
 }
 
 .post h1 {
