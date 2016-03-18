@@ -10,3 +10,7 @@ background: header-bg.jpg
 paginate: 5
 
 less_than_minute: 1
+
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "page:num"
