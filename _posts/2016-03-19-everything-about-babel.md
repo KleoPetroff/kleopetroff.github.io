@@ -20,9 +20,9 @@ There are two main advantages for this:
 
 After installing `babel-cli` and saved it as a dev dependency, you can run the following commands from the terminal: 
 
-{% highlight bash %}
+```
 babel example.js --out-file compiled.js
-{% endhighlight %}
+```
 
 Let's see what every piece of the command does:
 
@@ -33,7 +33,7 @@ Let's see what every piece of the command does:
 
 Typing the command every time you make a change can be a tedious work. We can automate the process using npm scripts. In you `package.json`, add a new _build_ task: 
 
-{% highlight javascript %}
+```javascript
 {
     ...
     "scripts": {
@@ -41,7 +41,7 @@ Typing the command every time you make a change can be a tedious work. We can au
     }
     ...
 }
-{% endhighlight %}
+```
 
 So now, you can run the script from the command line using `npm run build`. The `-w` option in the script instructs npm to watch for changes in the `src` folder. Every time you make a change to a file in `src`, Babel will transpile the code and save it in the `lib` folder with the same name.
 
@@ -53,22 +53,22 @@ However this works quite well for  development purposes.
 
 Let's install `babel-register` first:
 
-{% highlight bash %}
+```
 npm install babel-register --save-dev
-{% endhighlight %}
+```
 
 Create a simple `index.js` file:
 
-{% highlight javascript %}
+```javascript
 console.log('Hello Babel');
-{% endhighlight %}
+```
 
 and require index.js:
  
-{% highlight javascript %}
+```javascript
 require('babel-register');
 require('index.js');
-{% endhighlight %}
+```
 
 When you run the code using `node register.js` you will see the output of `index.js` - `"Hello World"`.
 
@@ -84,9 +84,9 @@ For running some code via the command line the easiest way to integrate Babel is
 
 Then you can simply replace `node` with `babel-node`:
 
-{% highlight bash %}
+```
 babel-node register.js
-{% endhighlight %}
+```
 
 
 The returned result will be again `"Hello World"`.
@@ -101,40 +101,40 @@ You can give Babel instructions on what to do by installing plugins and presets.
 
 The `.babelrc` file is the configuration file for Babel. Start off with it like this:
 
-{% highlight javascript %}
+```javascript
 {
     "presets": [],
     "plugins": []
 }
-{% endhighlight %}
+```
 
 Let's start telling Babel to transpile ES6 code to ES5. We do this by using the es2015 preset:
 
-{% highlight bash %}
+```
 npm install babel-preset-es2015 --save-dev
-{% endhighlight %}
+```
 
 Modify `.babelrc` and add the preset: 
 
-{% highlight javascript %}
+```javascript
 {
     "presets": ["es2015"],
     "plugins": []
 }
-{% endhighlight %}
+```
 
 Setting up React is just as easy: 
 
-{% highlight bash %}
+```
 npm install babel-preset-react --save-dev
-{% endhighlight %}
+```
 
-{% highlight javascript %}
+```javascript
 {
     "presets": ["es2015", "react"],
     "plugins": []
 }
-{% endhighlight %}
+```
 
 JavaScript has some proposals for new features that are not yet finalized. They are separated into 5 states (0 to 4). As proposals gain more traction and are more likely to be accepted into the standard they proceed through the various stages, finally being accepted into the standard at stage 4.
 
@@ -151,58 +151,58 @@ Each of these presets requires the later preset. For example `babel-preset-stage
 
 Simply install the stage you want to use:
 
-{% highlight bash %}
+```
 npm install babel-preset-stage-2
-{% endhighlight %}
+```
 
 Then add it to Babel config file:
 
-{% highlight javascript %}
+```javascript
 {
     "presets": ["es2015", "react", "stage-2"],
     "plugins": []
 }
-{% endhighlight %}
+```
 
 ### babel-polyfill
 
 `babel-polyfill` will emulate a full ES6 environment. For example, without the polyfill, the following code:
 
-{% highlight javascript %}
+```javascript
 function allAdd() {
     return Array.from(arguments).map((a) => a + 2);
 }
-{% endhighlight %}
+```
 
 will be transpiled to:
 
-{% highlight javascript %}
+```javascript
 function allAdd() {
     return Array.from(argument).map(function (a) {
         return a + 2;
     });
 }
-{% endhighlight %}
+```
 
 This code will not work everywhere, because `Array.from` in not supported by every browser:
 
-{% highlight bash %}
+```
 Uncaught TypeError: Array.from is not a function
-{% endhighlight %}
+```
 
 To solve this problem we need to use a polyfill. A polyfill is a piece of code, that replicate the native API that does not exist in the current runtime. Babel uses [core-js](https://github.com/zloirock/core-js) as it's polyfill and [regenerator](https://github.com/facebook/regenerator) for its generators and async functions.
 
 To include the Babel polyfill, we need to install it:
 
-{% highlight bash %}
+```
 npm install babel-polyfill --save-dev
-{% endhighlight %}
+```
 
 Then, simply include the polyfill at the top of any file that requires it:
 
-{% highlight javascript %}
+```javascript
 import 'babel-polyfill';
-{% endhighlight %}
+```
 
 ## Advanced Babel Configuration
 
@@ -214,36 +214,36 @@ Babel presets are just collections of pre-configured plugins. You can manually a
  
 Let's say for example that you want to use [JavaScript Decorators](https://github.com/wycats/javascript-decorators/blob/master/README.md). You need to install the decorators plugin:
 
-{% highlight bash %}
+```
 npm install transform-decorators --save-dev
-{% endhighlight %}
+```
 
 and add it in `.babelrc`: 
 
-{% highlight javascript %}
+```javascript
 {
   "presets": ["es2015"],
   "plugins": ["transform-decorators"]
 }
-{% endhighlight %}
+```
  
 For a full list of official plugins see [Babel Plugins](http://babeljs.io/docs/plugins/). Also you can check the npm registry for [community build plugins](https://www.npmjs.com/search?q=babel-plugin).
  
 Some plugins have also has options to configure. For example, many transforms have a "loose" mode which drops some spec behavior in favor of simpler and more performant generated code.
   
-{% highlight javascript %}
+```javascript
 {
    ...
    plugins:  ["transform-es2015-classes", { "loose": true }]
    ...
 }
-{% endhighlight %}
+```
 
 ### Customizing Babel based on environment
  
 Babel has plugins that can help you in the development process, as plugins for optimizing code for production. You can configure which plugins to load, based on the environment you are:
 
-{% highlight javascript %}
+```javascript
 {
     "presets": ["es2015],
     "env": {
@@ -255,7 +255,7 @@ Babel has plugins that can help you in the development process, as plugins for o
         }
     }
 }
-{% endhighlight %}
+```
 
 The current environment will use `process.env.BABEL_ENV`. If `BABEL_ENV` is not present, it will use `process.env.NODE_ENV`. If `NODE_ENV` is not available too, it will default to `development`.
 
@@ -283,18 +283,18 @@ Writing the same configurations again and again seems like a ton of work. That's
 
 Say you have the following `.babelrc`: 
 
-{% highlight javascript %}
+```javascript
 {
   "presets": ["es2015", "react"],
   "plugins": ["transform-decorators"]
 }
-{% endhighlight %}
+```
 
 All you need to do is name the project folder `babel-preset-*` and create two files:
 
 A `package.json` file with the `dependencies` for the preset:
 
-{% highlight javascript %}
+```javascript
 {
   "name": "babel-preset-awesome",
   "version": "1.0.0",
@@ -305,11 +305,11 @@ A `package.json` file with the `dependencies` for the preset:
     "babel-plugin-transform-decorators": "^6.6.5",
   }
 }
-{% endhighlight %}
+```
 
 Then, create an `index.js` that exports the context of `.babelrc`, replacing the presets and plugins string with `require` calls:
 
-{% highlight javascript %}
+```javascript
 module.exports {
     {
         presets: [
@@ -321,7 +321,7 @@ module.exports {
         ]
     }
 }
-{% endhighlight %}
+```
 
 Then simply publish it to the npm registry.
 
@@ -333,24 +333,24 @@ Babel can be set up to work with other tools like linting and code style.
 
 One of the most popular linting tools is [ESLint](http://eslint.org/). Babel provides an official integration. You need to install:
  
-{% highlight javascript %}
+```
 npm install eslint babel-eslint --save-dev
-{% endhighlight %}
+```
 
 Next, create the `.eslintrc` in your project and set the `parser` to `babel-eslint`: 
 
-{% highlight javascript %}
+```javascript
 {
     "parser": "babel-eslint",
     "rules": {
     ...
     }
 }
-{% endhighlight %}
+```
 
 You can then easily add a new npm task in your `package.json`:
 
-{% highlight javascript %}
+```javascript
 {
     ...
     "scripts": {
@@ -358,7 +358,7 @@ You can then easily add a new npm task in your `package.json`:
     }
     ...
 }
-{% endhighlight %}
+```
  
 In the command you can type `npm run lint`.
 
