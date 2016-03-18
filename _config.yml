@@ -3,7 +3,7 @@ markdown: kramdown
 permalink: pretty
 exclude: [gulpfile.js, node_modules, assets/_scss]
 
-highlighter: pygments
+highlighter: rouge
 
 background: header-bg.jpg
 
