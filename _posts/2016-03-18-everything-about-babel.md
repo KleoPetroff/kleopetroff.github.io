@@ -1,14 +1,16 @@
 ---
 layout: post
 title: Everything you need to know about BabelJS
-description: Babel is becoming the de-facto tool for compiling new ES6/ES7 code to browser usable code. Here is all you need to know to become comfortable with Babel.  
+description: Babel is becoming the de-facto tool for compiling ES6/ES7 code to browser usable code. Here is all you need to know to become comfortable with Babel.  
 ---
 
 ![Babel Logo](http://kleopetrov.me/assets/images/posts/babel.jpg)
 
-[Babel](https://babeljs.io) is a tool for transpiling (compile) ES6/ES7 code to ECMAScript 5 code, which can be used **today** in any modern browser. Even more - Babel has extensions for transpiling JSX for React and Flow syntax for static type checking.
+[Babel](https://babeljs.io) is a tool for transpiling (compiling) ES6/ES7 code to ECMAScript 5 code, which can be used **today** in any modern browser. Even more - Babel has extensions for transpiling JSX for React and Flow syntax for static type checking.
     
-Babel is composed of different small modules. Out of the box, Babel doesn't do anything. It uses presets for compiling the code, which we will cover later on.
+Babel is composed of various small modules. Out of the box, Babel doesn't do anything. It uses presets for compiling the code, which we will cover later on.
+ 
+> **Note:** I assume you are comfortable using the command line and have installed [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/). Also make sure you have `package.json` in your project folder. More info - [npm init](https://docs.npmjs.com/cli/init) 
  
 ### babel-cli
 
@@ -332,7 +334,7 @@ Babel can be set up to work with other tools like linting and code style.
 
 ### Linting
 
-One of the most popular linting tools is [ESLint](http://eslint.org/). Babel provides an official integration. You need to install:
+One of the most popular linting tools is [ESLint](http://eslint.org/). Babel provides an official integration for it. First, install the package:
  
 ```
 npm install eslint babel-eslint --save-dev
