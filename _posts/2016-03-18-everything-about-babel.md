@@ -4,6 +4,7 @@ title: Everything you need to know about BabelJS
 description: Babel is becoming the de-facto tool for compiling new ES6/ES7 code to browser usable code. Here is all you need to know to become comfortable with Babel.  
 ---
 
+![Babel Logo](http://kleopetrov.me/assets/images/posts/babel.jpg)
 
 [Babel](https://babeljs.io) is a tool for transpiling (compile) ES6/ES7 code to ECMAScript 5 code, which can be used **today** in any modern browser. Even more - Babel has extensions for transpiling JSX for React and Flow syntax for static type checking.
     

@@ -48,6 +48,10 @@
     &:hover { color: $secondary-color }
 }
 
+.post img {
+    max-width: 100%;
+}
+
 // Disqus Posts
 #disqus_thread {
     margin-top: 10em;
