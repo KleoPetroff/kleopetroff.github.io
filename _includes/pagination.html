@@ -1,12 +1,12 @@
 <div class="pagination twelve column">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    <a href="{{ paginator.previous_page_path }}" class="next">&#10094;</a>
   {% else %}
-    <span class="previous">Previous</span>
+    <span class="next">Next</span>
   {% endif %}
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    <a href="{{ paginator.next_page_path }}" class="previous">&#10095;</a>
   {% else %}
-    <span class="next ">Next</span>
+    <span class="previous">Previous</span>
   {% endif %}
 </div>
