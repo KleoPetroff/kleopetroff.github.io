@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Everything you need to know about BabelJS
-description: Babel is becoming the de-facto tool for compiling ES6/ES7 code to browser usable code. Here is all you need to know to become comfortable with Babel.  
+description: Babel is becoming the de-facto tool for compiling ES6/ES7 code to browser usable code. Here is all you need to know to become comfortable with it.  
 ---
 
 ![Babel Logo](http://kleopetrov.me/assets/images/posts/babel.jpg)
