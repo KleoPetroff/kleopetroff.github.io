@@ -8,7 +8,7 @@ description: Babel is becoming the de-facto tool for compiling ES6/ES7 code to b
 
 [Babel](https://babeljs.io) is a tool for transpiling (compiling) ES6/ES7 code to ECMAScript 5 code, which can be used **today** in any modern browser. Even more - Babel has extensions for transpiling JSX for React and Flow syntax for static type checking.
     
-Babel is composed of various small modules. Out of the box, Babel doesn't do anything. It uses presets for compiling the code, which we will cover later on.
+It's composed of various small modules. Out of the box, Babel doesn't do anything. It uses presets for compiling the code, which we will cover later on.
  
 > **Note:** I assume you are comfortable using the command line and have installed [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/). Also make sure you have `package.json` in your project folder. More info - [npm init](https://docs.npmjs.com/cli/init) 
  
@@ -218,7 +218,7 @@ Babel presets are just collections of pre-configured plugins. You can manually a
 Let's say for example that you want to use [JavaScript Decorators](https://github.com/wycats/javascript-decorators/blob/master/README.md). You need to install the decorators plugin:
 
 ```
-npm install transform-decorators --save-dev
+npm install babel-plugin-transform-decorators --save-dev
 ```
 
 and add it in `.babelrc`: 
@@ -367,7 +367,7 @@ In the command you can type `npm run lint`.
 
 ### Editors
 
-With the growing popularity of Babel, more and more editors provide support for it trough addons:
+With the growing popularity of Babel, more and more editors provide support for it through addons:
 
 - [Sublime Text](https://github.com/babel/babel-sublime)
 - [Webstorm](https://babeljs.io/docs/setup/#webstorm)
