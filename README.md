@@ -5,5 +5,4 @@ My personal Jekyll website, hosted on [Github Pages](https://pages.github.com), 
 
 From the beginning of this projects, the purpose was clear - create a simple, good looking, and most important - **fast** personal website.
 
-
-
+![](https://raw.githubusercontent.com/KleoPetroff/kleopetroff.github.io/master/assets/images/readme-image.jpg)
