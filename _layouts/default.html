@@ -29,13 +29,15 @@ layout: compress
             .container { position: relative; width: 80%; max-width: 960px; margin: 0 auto; padding: 0; box-sizing: border-box; }
             a { background-color: transparent; color: #1eaedb; }
             .logo { font-family: Lato, Verdana, sans-serif; font-size: 3em; font-weight: 900; color: #383838; text-decoration: none; float: left; }
+            .presentation-logo { float: left; }
+            .hashnode { float: left; clear: left; background: url("/assets/images/hashnode.png") no-repeat left center; padding: 2px 0 2px 30px; color: #00b8d3 }
             .header-navigation { float: right; }
             ul { list-style: inside; }
             ol, ul { padding-left: 0; margin-top: 0; }
             pre, blockquote, dl, figure, table, p, ul, ol, form { margin-bottom: 2.5rem; }
             .navigation { text-align: right; margin-top: 20px; }
             li { margin-bottom: 1rem; }
-            .navigation li { display: inline-block; margin: 0 10px; }
+            .navigation li { display: inline-block; margin: 0 7px; }
             .navigation li, .contact-list li { padding: 0 0 1rem; }
             .navigation li a { font-size: 1.6em; color: #7f7f7f; text-decoration: none; }
             h1, h2, h3, h4, h5, h6 { font-family: Lato, Verdana, sans-serif; font-weight: 900; line-height: 1.25; margin-top: 0; margin-bottom: 2rem; }
@@ -43,7 +45,7 @@ layout: compress
             .heading { text-align: center; margin-top: 0.5em; margin-bottom: 1.2em; }
             .posts { list-style: none; }
             .column, .columns { width: 100%; float: left; box-sizing: border-box; margin-left: 4%; }
-            .posts li { display: inline-block; width: 100%; margin-bottom: 3rem; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #ececec; }
+            .posts li { display: inline-block; width: 100%; margin-bottom: 3rem;  border-bottom: 1px solid #ececec; }
             .meta { color: #7f7f7f; display: block; margin-bottom: 10px; font-size: 1.25rem; }
             h2 { font-size: 4.2rem; line-height: 1.25; letter-spacing: -0.1rem; }
             .posts h2 { font-size: 2.9rem; margin-bottom: 1.3rem; }
@@ -53,6 +55,8 @@ layout: compress
             .next     { float: left; }
             .previous, .next { width: 130px; text-align: center; display: none; font-size: 30px; padding: 5px 10px; border: 1px solid #c1c1c1; border-radius: 5px; color: #5d5d5d; text-decoration: none; }
             @media all and (max-width: 768px) {
+                .presentation-logo { display: block; float: none; text-align: center; }
+                .hashnode { float: none; display: inline-block; margin: 15px 0; }
                 .logo { float: none; display: block; text-align: center; margin-top: 0; }
                 .header-navigation { float: none }
                 .navigation { text-align: center; display: block;}
@@ -91,8 +95,6 @@ layout: compress
             ga('send', 'pageview');
 
         </script>
-        <script>
-           window.onload = function () { document.getElementById('hidden').style.display = 'block' }
-        </script>
+        <script>window.onload = function () { document.getElementById('hidden').style.display = 'block' }</script>
     </body>
 </html>
