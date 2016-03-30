@@ -14,19 +14,18 @@ description: Един от най-използваните шаблони в о�
 
 Има три начина за създаване на нови обекти в JavaScript:
 
-{% highlight javascript linenos %}
-
+```js
 var myObject = {} // обект, създаден чрез Обектен литерал
 
 var myObject = Object.create(Object.prototype) // използвайти Object.create() метода
 
 var myObject = new Object() // Използване на Обектния контруктор
 
-{% endhighlight %}
+```
 
 В Javascript съществуват 4 начина, по които могат да се присвоят дадени атрибути към обект:
 
-{% highlight javascript linenos %}
+```js
 
 /** ES3 съвместимо **/
 
@@ -69,7 +68,7 @@ Object.defineProperties(myObject, {
         writeable: true
     }
 });
-{% endhighlight %}
+```
 
 ## Обектен Контруктор
 
@@ -77,7 +76,7 @@ Object.defineProperties(myObject, {
 
 В контруктора, ключовата дума `this` е референция към новосъздадените обекти. Един обекновен контруктор би изглеждал по следния начин:
 
-{% highlight javascript linenos %}
+```js
 // Дефиниране на конструктора
 function Car(model, color, age) {
     this.model = model;
@@ -95,11 +94,10 @@ function Car(model, color, age) {
 var ford = new Car('Fiesta', 'red', 2005);
 var fiat = new Car('Uno', 'blue', 2001);
 
-
 //Извикване на метода information
 console.log(ford.information()); // 'This car model is Fiesta, with red color from 2005 year!'
 console.log(fiat.information()); // 'This car model is Uno, with blue color from 2001 year!'
-{% endhighlight %}
+```
 
 ## Обобщение (TL;DR)
 

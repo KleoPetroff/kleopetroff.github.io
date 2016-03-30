@@ -8,7 +8,7 @@ description: Сингълтон шаблонът в JavaScript - кратко о
 
 В JavaScript, Сингълтонът се използва като споделен namespace, който изолира имплементиращия код от глобалния namespace, като предоставя един единствен начин за достъп до фукнциите.
 
-{% highlight javascript %}
+```js
 var mySingleton = (function() {
     // променлива, която съхранява референцията до Сингълтона
     var instance;
@@ -53,17 +53,17 @@ var mySingleton = (function() {
 
 }());
 
-{% endhighlight %}
+```
 
 Използването на този шаблон става по следния начин
 
-{% highlight javascript %}
+```js
     var singleA = mySingleton.getInstance();
     var singleB = mySingleton.getInstance();
 
     console.log(singleA.getRandomNumber() !== single.getRandomNumber()); // в 99% от случаите ще върне false;
 
-{% endhighlight %}
+```
 
 Това, което различава Сингълтона от другите обекти е начинът, по който се достъпва. Това става чрез публичният метод `getInstance()`, като не използваме `new mySingleton()`.
 

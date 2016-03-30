@@ -12,7 +12,7 @@ A view's `render()` method can be bound to a model's `change()` event, enabling 
 
 Creating a new view is similar to creating a new model we need to extend `Backbone.View`:
 
-{% highlight javascript %}
+```js
 var TodoView = Backbone.View.extend({
     tagName: 'span',
     
@@ -47,7 +47,7 @@ var TodoView = Backbone.View.extend({
 var todoView = new TodoView();
 
 console.log(todoView.el) // will log <li></li>
-{% endhighlight %}
+```
 
 ## What is `el` ?
 
@@ -59,7 +59,7 @@ We can set a combination of the properties `tagName`, `className` and `id` on th
 
 In the example above, the `tagName` is set to "li", so a li element is created. Let's see another example:
 
-{% highlight javascript %}
+```js
 var TodoView = Backbone.View.extend({
     tagName: 'ul', // required, but defaults to div
     
@@ -70,7 +70,7 @@ var TodoView = Backbone.View.extend({
 
 var todoView = new TodoView();
 console.log(todoView.el) // will log <ul class="todo-list" id="todo"></ul>
-{% endhighlight %}
+```
 
 The above code creates a new DOM element but doesn't append it to the DOM. If the element exist in the page, we can set a `el` property to the view as a CSS selector that matches the element.
  
@@ -88,7 +88,7 @@ If we need to apply an existing Backbone view to a different DOM element `setEle
 
 `setElement` will create a cached `$el` reference for us, moving the delegated events of the view from the old to the new one.
 
-{% highlight javascript %}
+```js
 // Create two DOM elements in memory
 var button1 = $('<button>Button 1</button>');
 var button2 = $('<button>Button 2</button>');
@@ -110,13 +110,13 @@ todoView.setElement(button2);
 
 button1.trigger('click'); //
 button2.trigger('click'); // will return true
-{% endhighlight %}
+```
 
 ## Understanding `render()`
 
 `render()` is a optional function that defines the logic for rendering a template. Here is an example using Underscore micro-templating:
 
-{% highlight html %}
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -140,7 +140,7 @@ button2.trigger('click'); // will return true
         <script src="app.js"></script>
     <body>
 </html>
-{% endhighlight %}
+```
 
 The `_.template` method in Underscore compiles Javascript templates into functions which can be evaluated for rendering. In the TodoView, we're passing the markup from the template with id `item-template` to `_.template` to be compiled and stored in the todoTpl property.
 
@@ -151,7 +151,7 @@ A common Backbone convention is to return `this` at the end of the `render()`. T
 - making views easily reusable in other parent views.
 - creating a list of elements without rendering and painting each of them individually, only to be drawn once the entire list populated.
 
-{% highlight javascript %}
+```js
 var TodoView = Backbone.View.extend({
    /* Compile a template for this view. In this case '...'
     * is a placeholder for a template such as
@@ -165,7 +165,7 @@ var TodoView = Backbone.View.extend({
     return this;
    }
 });
-{% endhighlight %}
+```
 
 ## The `events` hash
 
@@ -175,7 +175,7 @@ Backbone `events` hash allows us to attach event listeners to either custom sele
 
 A number of DOM even-types are supported, including `click`, `submit`, `mouseover`, `dbclick`, etc.
 
-{% highlight javascript %}
+```js
 var TodoView = Backbone.View.extend({
     tagName: 'li',
     
@@ -186,18 +186,18 @@ var TodoView = Backbone.View.extend({
         'click .destroy': 'clear',
     },
     ...
-{% endhighlight %}
+```
 
 Backbone uses jQuery's `.delegate()` underneath and further extends it so that `this` always refers to the current view object within callback functions. The only thing to keep in mind is that any string callback supplied to the event must have a corresponding function with the same name within the scope of the view.
 
 We can also bind methods ourselves using `_.bind(this.viewEvent, this)`, which is effectively what the value in each event's key-value pair is doing. Below we use `_.bind` to re-render our view when a model is changed:
  
-{% highlight javascript %}
+```js
 var TodoView = Backbone.View.extend({
     initialize: function() {
         this.model.bind('change', _.bind(this.render, this));
     }
 });
-{% endhighlight %}
+```
 
 `_.bind` only works on one method at a time, but effectively binds a function to an object so that anytime the function is called the value of this will be the object.

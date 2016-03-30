@@ -12,7 +12,7 @@ description: За подобрената версия на модулния ша
 
 Пример за разкриващ модулен шаблон:
 
-{% highlight javascript %}
+```js
 
 // Дефиниране на шаблона
 var myRevealingModulePattern = (function() {
@@ -46,7 +46,7 @@ console.log(myRevealingModulePattern.setName('Chris Price'));
 console.log(myRevealingModulePattern.getName());
 console.log(myRevealingModulePattern.greeting);
 
-{% endhighlight %}
+```
 
 ## Предимства
 

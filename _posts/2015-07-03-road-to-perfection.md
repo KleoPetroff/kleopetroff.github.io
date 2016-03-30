@@ -49,7 +49,7 @@ Google update their analytics javascript only a few times a year, judging from t
 Every CSS file, loaded the normal way, slows down the page rendering. Fixing this problem was quite easy though - I had to load the CSS after rendering the page:
 
 
-{% highlight javascript linenos %}
+```js
       var cb = function() {
         var l = document.createElement('link'); l.rel = 'stylesheet';
         l.href = '/assets/css/styles.min.css';
@@ -59,17 +59,16 @@ Every CSS file, loaded the normal way, slows down the page rendering. Fixing thi
           webkitRequestAnimationFrame || msRequestAnimationFrame;
       if (raf) raf(cb);
       else window.addEventListener('load', cb);
-{% endhighlight %}
+```
 	
 This solution worked great, but another problem arose - I had an User Experience warning, telling me that the navigation links were too close to each other. I had to include part of the CSS directly in the `<head>`.
  
- {% highlight css linenos %}
+```css
 .navigation li,
 .contact-list li {
     padding: 0 0 1rem;
 }
-
- {% endhighlight %}
+```
 
 Rendering - check!
 
