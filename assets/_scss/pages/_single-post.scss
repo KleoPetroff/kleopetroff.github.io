@@ -42,7 +42,7 @@
 }
 
 .post a {
-    @include transition(all, .3s, ease-in);
+    @include transition(all, .3s, ease-out);
     color: $main-color;
 
     &:hover { color: $secondary-color }
