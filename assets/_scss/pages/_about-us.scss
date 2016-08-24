@@ -110,7 +110,7 @@
 .fifth:after,
 .sixth:after {
     min-height: 60em;
-    top: -15em;
+    top: -12em;
     left: -1px;
     width: 1px;
     background: #212221;
@@ -170,11 +170,16 @@
 .ninety-five:after  { width: 95% }
 .ninety:after       { width: 90% }
 .eighty-four:after  { width: 84% }
+.eighty:after       { width: 80% }
 .seventy-nine:after { width: 78% }
 .seventy-five:after { width: 75% }
+.sixty:after        { width: 60% }
 .fifty:after        { width: 50% }
 .forty:after        { width: 40% }
 
+.in-progress {
+    text-align: center;
+}
 
 .personal-skill h4 {
     color: $main-color;
@@ -196,6 +201,14 @@
 .fifth--position{
     margin-top: 0;
     font-size: 1.25em;
+}
+
+.winner {
+    color: $main-yellow;
+}
+
+.winner:hover {
+    color: $main-yellow;
 }
 
 .hobbies h2 {
