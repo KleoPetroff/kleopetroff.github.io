@@ -76,14 +76,17 @@
     .container .left:first-of-type,
     .container .left{
         margin-left: 0;
+        margin-right: 0;
         border-left: none;
         padding-left: 0;
+        border-bottom: 1px solid #222;
     }
 
     .container .right {
         border-left: none;
-        margin-left: 10%;
+        margin-left: 0;
         padding-left: 0;
+        border-bottom: 1px solid #222;
     }
 
     .third:after,
@@ -127,34 +130,15 @@
             display: none;
         }
     }
-}
 
-@media all and (max-width: 768px) {
     .header-navigation {
         clear: both;
         float: none;
     }
 
-    .logo {
-        float: none;
-        display: block;
-        text-align: center;
-        margin-top: 0;
-    }
-
     .contact-position { float: none }
 
-    .left {
-        border-left: none;
-        border-bottom: 1px solid #222;
-    }
-
     .left:before { display: none }
-
-    .container .right {
-        margin-left: 0;
-        border-bottom: 1px solid #222;
-    }
 
     .name h2,
     .name h5,
@@ -174,10 +158,13 @@
     }
 
 
-
+    // Overwrite of default skeleton column
+    .hobie-images .columns {
+        width: 50%;
+    }
 }
 
-@media all and (min-width: 768px) and (max-width: 1023px)  {
+@media all and (max-width: 1023px)  {
     .right-percentage {
         width: 100%;
         margin-bottom: 5px;
