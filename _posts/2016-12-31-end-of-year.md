@@ -8,10 +8,11 @@ It’s been a while I wrote something here, 9 months to be precise and so many t
 
 - Started working at Coherent Labs.
 - Moved to Sofia.
-- Became a writer at Hashnode.
-- Attended several conferences - BeerJS, Sofia Game Dev Meetup, Dev.bg sessions.
+- [Became a writer at Hashnode](https://hashnode.com/originals).
+- Attended several conferences - [BeerJS](https://github.com/beerjs/sofia), [Sofia Game Dev Meetup](https://www.meetup.com/Sofia-Game-Dev-Meetup), multiple Dev.bg events.
+- [Got recognized as a top contributor of Hashnode for second consecutive year](https://2016.hashnode.com).
 - Started reading non-technical literature.
-- Finally was able to go on a summer holiday.
+- Finally was able to go on a summer holiday!
 
 ## The change
 
