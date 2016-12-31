@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The end of an awesome year
-description: A short retrospective of an year full of changes, adventures and lessons.
+description: A short retrospective of a year full of changes, adventures, and lessons.
 ---
 
 It’s been a while I wrote something here, 9 months to be precise and so many things happen during this time. 2016 was a blast for me:
