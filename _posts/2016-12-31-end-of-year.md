@@ -41,6 +41,7 @@ I have big plans for 2017 and I’ve already set resolutions for the new year. A
 - **Learn something new every two weeks and document it** - this is my ultimate challenge for 2017. I will try to learn a new technology every two weeks.
 - **Write more blog posts** - I was very inactive this year when it comes to writing here. My last post was at 18th of March. Next year, I plan to be more active and write more - approximate 2-3 blog posts a month.
 - **Continue to self-develop** - 2016 was marked as the year I read a lot of technical and non-technical literature. 2017 will be no different. I've made a list of books I want to read and I'm dead set of reading them by the end of the next year.
+- **Be more active** - be more active and participate more in Hashnode's community, my local JS community and at work.
 - **Travel more** - I couldn't go to most of the places I've wanted this year. [The Seven Rila Lakes](http://bulgariatravel.org/en/object/274/sedemte_rilski_ezera), [Musala](https://www.wikiwand.com/en/Musala), [Vihren](https://www.wikiwand.com/en/Vihren), see you soon :)
 
 -----
