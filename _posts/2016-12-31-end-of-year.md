@@ -4,6 +4,8 @@ title: The end of an awesome year
 description: A short retrospective of a year full of changes, adventures, and lessons.
 ---
 
+![2017](http://i.imgur.com/jB6ZTEk.jpg)
+
 It’s been a while I wrote something here, 9 months to be precise and so many things happen during this time. 2016 was a blast for me:
 
 - Started working at Coherent Labs.
