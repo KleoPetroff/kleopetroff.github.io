@@ -1,6 +1,7 @@
 ---
+title: What is Critical Rendering Path
+date: 2016-02-07 00:00:00 Z
 layout: post
-title: What is Critical Rendering Path 
 description: Ever wondered what happens when you type google.com and hit enter?
 ---
 

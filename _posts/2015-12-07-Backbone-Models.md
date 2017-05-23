@@ -1,7 +1,10 @@
 ---
-layout: post
 title: Backbone.js Models Explained
-description: Models are the heart of any JavaScript application, containing the interactive data as well as a large part of the logic surrounding it - conversions, validations, computed properties, and access control.
+date: 2015-12-07 00:00:00 Z
+layout: post
+description: Models are the heart of any JavaScript application, containing the interactive
+  data as well as a large part of the logic surrounding it - conversions, validations,
+  computed properties, and access control.
 ---
 
 Backbone models contain data for an application as well as the logic, for example a todo item including its attributes like title, completed etc.

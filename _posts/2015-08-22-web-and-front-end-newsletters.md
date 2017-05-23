@@ -1,7 +1,11 @@
 ---
-layout: post
 title: 12 Web and Front-End Newsletters I can't live without
-description: Keeping up to date with the latest technologies is hard these days. It's the golden age of informational technology and every day something new emerges - tutorials, frameworks, libraries, updates etc. So how to keep you stream of information flow? Here's my experience...
+date: 2015-08-22 00:00:00 Z
+layout: post
+description: Keeping up to date with the latest technologies is hard these days. It's
+  the golden age of informational technology and every day something new emerges -
+  tutorials, frameworks, libraries, updates etc. So how to keep you stream of information
+  flow? Here's my experience...
 language: en
 ---
 

@@ -1,6 +1,7 @@
 ---
-layout: post
 title: The end of an awesome year
+date: 2016-12-31 00:00:00 Z
+layout: post
 description: A short retrospective of a year full of changes, adventures, and lessons.
 ---
 

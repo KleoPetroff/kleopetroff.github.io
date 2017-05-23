@@ -1,6 +1,7 @@
 ---
-layout: post
 title: Javascript Шаблони - Singleton Pattern
+date: 2015-11-10 00:00:00 Z
+layout: post
 description: Сингълтон шаблонът в JavaScript - кратко описание
 ---
 

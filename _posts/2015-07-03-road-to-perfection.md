@@ -1,7 +1,9 @@
 ---
-layout: post
 title: 100/100 PageSpeed - the road to perfection
-description: How one month of head bashing, keyboard smashing and a huge amount of coffee was enough to achieve the orgasmic result of 100/100 PageSpeed.
+date: 2015-07-03 00:00:00 Z
+layout: post
+description: How one month of head bashing, keyboard smashing and a huge amount of
+  coffee was enough to achieve the orgasmic result of 100/100 PageSpeed.
 language: en
 ---
 

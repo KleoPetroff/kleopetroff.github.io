@@ -1,6 +1,7 @@
 ---
-layout: post
 title: Javascript Шаблони - Revealing Module Pattern
+date: 2015-11-08 00:00:00 Z
+layout: post
 description: За подобрената версия на модулния шаблон и за нейните добри и лоши страни.
 ---
 

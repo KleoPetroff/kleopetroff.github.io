@@ -1,7 +1,9 @@
 ---
-layout: post
 title: Backbone.js Views Explained
-description: Backbone views are used to reflect what your applications' data models look like. They are also used to listen to events and react accordingly.
+date: 2015-12-08 00:00:00 Z
+layout: post
+description: Backbone views are used to reflect what your applications' data models
+  look like. They are also used to listen to events and react accordingly.
 ---
 
 Backbone Views don't contain HTML for our application, but the logic behind the presentation of the models. This is usually achieved using JS templates like Underscore templates, Mustache, Handlebars etc. 

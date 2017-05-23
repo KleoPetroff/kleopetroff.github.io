@@ -1,7 +1,10 @@
 ---
-layout: post
 title: Backbone.js Collections Explained
-description: Backbone collections are simply an ordered set of models. A Collection helps you deal with a group of related models, handling the loading and saving of new models to the server and providing helper functions.
+date: 2015-12-10 00:00:00 Z
+layout: post
+description: Backbone collections are simply an ordered set of models. A Collection
+  helps you deal with a group of related models, handling the loading and saving of
+  new models to the server and providing helper functions.
 ---
 
 Collections in Backbone are set of Models created by extending `Backbone.Collection`.
