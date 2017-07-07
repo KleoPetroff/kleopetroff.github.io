@@ -1,6 +1,6 @@
 ---
 title: Learning jQuery before JavaScript
-date: 2017-07-07 00:00:00
+date: 2017-07-07 00:00:00 Z
 description: Skipping fundamentals in favor of tools
 layout: post
 ---
