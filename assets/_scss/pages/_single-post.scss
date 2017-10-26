@@ -7,8 +7,8 @@
 
 .post p,
 .post li {
-    font-size: 1.25em;
-    line-height: 1.7;
+    font-size: 1.15em;
+    line-height: 1.6;
     margin-bottom: 0;
 }
 
@@ -33,7 +33,8 @@
 .post h2,
 .post h3 {
     margin-top: 1.3em;
-    font-size: 3rem;
+    font-size: 2.3rem;
+    font-weight: normal;
 }
 
 .post h4,
@@ -43,7 +44,8 @@
 
 .post a {
     @include transition(all, .3s, ease-out);
-    color: $main-color;
+    color: $link-hover-color;
+    text-decoration: none;
 
     &:hover { color: $secondary-color }
 }
@@ -54,5 +56,5 @@
 
 // Disqus Posts
 #disqus_thread {
-    margin-top: 10em;
+    margin-top: 3em;
 }

@@ -1,45 +1,75 @@
-
 @font-face {
-    font-family: 'Merriweather';
-    src: url('/assets/fonts/merriweather/Merriweather_Light.eot');
-    src: local('?'),
-         url('/assets/fonts/merriweather/Merriweather_Light.woff') format('woff'),
-         url('/assets/fonts/merriweather/Merriweather_Light.ttf') format('truetype'),
-         url('/assets/fonts/merriweather/Merriweather_Light.svg') format('svg');
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'Rubik';
+  src: url('/assets/fonts/Rubik/Rubik-Regular.eot');
+  src: local('?'),
+  url('/assets/fonts/Rubik/Rubik-Regular.woff') format('woff'),
+  url('/assets/fonts/Rubik/Rubik-Regular.ttf') format('truetype'),
+  url('/assets/fonts/Rubik/Rubik-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Merriweather';
-    src: url('/assets/fonts/merriweather/Merriweather-Bold.eot');
-    src: local('?'),
-    url('/assets/fonts/merriweather/Merriweather-Bold.woff') format('woff'),
-    url('/assets/fonts/merriweather/Merriweather-Bold.ttf') format('truetype'),
-    url('/assets/fonts/merriweather/Merriweather-Bold.svg') format('svg');
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'Rubik';
+  src: url('/assets/fonts/Rubik/Rubik-Bold.eot');
+  src: local('?'),
+  url('/assets/fonts/Rubik/Rubik-Bold.woff') format('woff'),
+  url('/assets/fonts/Rubik/Rubik-Bold.ttf') format('truetype'),
+  url('/assets/fonts/Rubik/Rubik-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Merriweather';
-    src: url('/assets/fonts/merriweather/Merriweather-Italic.eot');
-    src: local('?'),
-    url('/assets/fonts/merriweather/Merriweather-Italic.woff') format('woff'),
-    url('/assets/fonts/merriweather/Merriweather-Italic.ttf') format('truetype'),
-    url('/assets/fonts/merriweather/Merriweather-Italic.svg') format('svg');
-    font-weight: 400;
-    font-style: italic;
+  font-family: 'Rubik';
+  src: url('/assets/fonts/Rubik/Rubik-Italic.eot');
+  src: local('?'),
+  url('/assets/fonts/Rubik/Rubik-Italic.woff') format('woff'),
+  url('/assets/fonts/Rubik/Rubik-Italic.ttf') format('truetype'),
+  url('/assets/fonts/Rubik/Rubik-Italic.svg') format('svg');
+  font-weight: normal;
+  font-style: italic;
 }
 
+@font-face {
+  font-family: 'Droid Sans';
+  src: url('/assets/fonts/droid-sans/DroidSerif-regular.eot');
+  src: local('?'),
+  url('/assets/fonts/droid-sans/DroidSerif-regular.woff') format('woff'),
+  url('/assets/fonts/droid-sans/DroidSerif-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: 'Lato';
-    src: url('/assets/fonts/lato/Lato-Black.eot');
-    src: local('?'),
-         url('/assets/fonts/lato/Lato-Black.woff') format('woff'),
-         url('/assets/fonts/lato/Lato-Black.ttf') format('truetype'),
-         url('/assets/fonts/lato/Lato-Black.svg') format('svg');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'Droid Sans';
+  src: url('/assets/fonts/droid-sans/DroidSerif-Bold.eot');
+  src: local('?'),
+  url('/assets/fonts/droid-sans/DroidSerif-Bold.woff') format('woff'),
+  url('/assets/fonts/droid-sans/DroidSerif-Bold.ttf') format('truetype'),
+  url('/assets/fonts/droid-sans/DroidSerif-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Droid Sans';
+  src: url('/assets/fonts/droid-sans/DroidSerif-Italic.eot');
+  src: local('?'),
+  url('/assets/fonts/droid-sans/DroidSerif-Italic.woff') format('woff'),
+  url('/assets/fonts/droid-sans/DroidSerif-Italic.ttf') format('truetype'),
+  url('/assets/fonts/droid-sans/DroidSerif-Italic.svg') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Droid Sans';
+  src: url('/assets/fonts/droid-sans/DroidSerif-BoldItalic.eot');
+  src: local('?'),
+  url('/assets/fonts/droid-sans/DroidSerif-BoldItalic.woff') format('woff'),
+  url('/assets/fonts/droid-sans/DroidSerif-BoldItalic.ttf') format('truetype'),
+  url('/assets/fonts/droid-sans/DroidSerif-BoldItalic.svg') format('svg');
+  font-weight: 700;
+  font-style: italic;
 }
