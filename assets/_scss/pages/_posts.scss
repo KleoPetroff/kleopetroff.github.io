@@ -1,18 +1,11 @@
-.posts li {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid #ECECEC;
-
-    &:last-child {
-        margin-bottom: 0;
-        border-bottom: none;
-    }
+.posts li:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
 }
 
 .post-title:hover {
     @include transition(all, .2s, ease-out);
-    color: #5F5F5F;
+    color: $link-hover-color;
 }
 
 .meta {

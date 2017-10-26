@@ -10,13 +10,13 @@
 .archive-paragraph { margin-bottom: 0 }
 
 .archive-post {
+    font-family: "Droid Sans", Verdana, sans-serif;
     font-size: 1.425em;
     color: $main-color;
     text-decoration: none;
-    @include transition(color,0.2s, ease-out);
 
     &:hover {
-        color: $secondary-color;
+        color: $link-hover-color;
         text-decoration: underline;
     }
 }
