@@ -9,7 +9,7 @@ language: en
 
 From the beginning, my idea was to develop a simple, minimalistic and **fast** personal website, that suit my needs. I had all the necessary tools, knowledge and motivation to create it. The challenging part was that I needed to finish it in only 30 days, while still doing my day job.
 
-Inspired by the idea behind [Launch In 30 challange](https://www.youtube.com/watch?v=hwSkyishkjI), I started developing this website, exactly one month ago and on June 30, I successfully deployed the project. There are still things that need to be polished, but the results I accomplished are more than satisfying.  
+Inspired by the idea behind [Launch In 30 challenge](https://www.youtube.com/watch?v=hwSkyishkjI), I started developing this website, exactly one month ago and on June 30, I successfully deployed the project. There are still things that need to be polished, but the results I accomplished are more than satisfying.  
 
 The most challenging part was the optimization. I didn't want to make any exceptions, as I was after the perfect score in PageSpeed. One month of head bashing, keyboard smashing and a huge amount of coffee was enough to achieve the orgasmic result of 100/100 PageSpeed.
 
@@ -21,7 +21,7 @@ The most challenging part was the optimization. I didn't want to make any except
 
 I cannot express the satisfaction seeing this for the first time. It was like a miracle come true, so let me share with you the whole process.
 
-##Minify EVERYTHING
+## Minify EVERYTHING
 
 I used [Gulp](http://gulpjs.com/) as a build system (I <span class="love">&#9829;</span> Gulp!), mostly for minifying and concatenating my CSS files. With the help of [gulp-minify-css](https://www.npmjs.com/package/gulp-minify-css) and [gulp-concat-css](https://www.npmjs.com/package/gulp-concat-css) I was able to spare myself from most of the tedious repetitive tasks. Google PageSpeed was more than happy to see only one minified CSS file in my project. 
 
@@ -76,4 +76,4 @@ Rendering - check!
 
 ## Conclusion 
 
-It was a bumpy ride,but the satisfaction of fixing these problems and seeing the actual results was so enjoyable and probably the most fun part of the whole development process. I can go to bed now, knowing my website OK.
+It was a bumpy ride, but the satisfaction of fixing these problems and seeing the actual results was so enjoyable and probably the most fun part of the whole development process. I can go to bed now, knowing my website is OK.
