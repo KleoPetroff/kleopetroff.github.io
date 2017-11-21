@@ -250,7 +250,7 @@ Babel has plugins that can help you in the development process, as plugins for o
 
 ```javascript
 {
-    "presets": ["es2015],
+    "presets": ["es2015"],
     "env": {
         "development": {
             "plugins": [...]
