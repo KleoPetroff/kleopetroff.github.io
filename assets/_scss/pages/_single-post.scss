@@ -7,13 +7,12 @@
 
 .post p,
 .post li {
-    font-size: 1.15em;
-    line-height: 1.6;
+    line-height: 1.8;
     margin-bottom: 0;
 }
 
 .post ol li {
-    & li { font-size: 1.1em }
+    & li { font-size: 1em }
     & ul { margin-top: 0 }
     &:last-child { margin-bottom: 1em }
 }
@@ -33,17 +32,17 @@
 .post h2,
 .post h3 {
     margin-top: 1.3em;
-    font-size: 2.3rem;
+    font-size: 2em;
     font-weight: normal;
 }
 
 .post h4,
 .post h5 {
-    font-size: 2.5rem;
+    font-size: 1.2em;
 }
 
 .post a {
-    @include transition(all, .3s, ease-out);
+    @include transition(all, .2s, ease-out);
     color: $link-hover-color;
     text-decoration: none;
 
