@@ -1,6 +1,6 @@
 ---
 title: Front-End For Backend Developers - Part I
-date: 2018-03-19 00:00:00 Z
+date: 2018-03-18 00:00:00 Z
 description: How browsers work and render pages
 layout: post
 ---
@@ -8,7 +8,7 @@ layout: post
 Front-end technologies are sky rocketing in popularity in the last few years. The holy trinity of Front-End - HTML, CSS and JavaScript, are used across different devices and environments - from games, through desktop applications, to robotics.
 But when we talk about front-end development, one thing always comes to mind first and that is web browsers.
 
-All of us use browsers, but few know how they actually work. We are so used to then, that we take them for granted, but behind every browser lie millions of lines of code. In the next few paragraphs, I will try to show you how exactly browsers work.
+All of us use browsers, but few know how they actually work. We are so used to them, that we take them for granted, but behind every browser lie millions of lines of code. In the next few paragraphs, I will try to show you how exactly browsers work.
 
 ## How browsers work
 
@@ -28,7 +28,7 @@ At a high-level, all web browsers are composed of 7 parts:
 
 The responsibility of the rendering engine is to display the requested contents on the browser screen. By default the rendering engine can display HTML and XML documents and images. It can display other types of data via plug-ins or extensions, for example displaying PDF documents.
 
-Different browsers use different rendering engines: Internet Explorer uses Trident, Firefox uses Gecko, Safari uses WebKit, Safari and Chrome uses Blink, which is a fork of WebKit. 
+Different browsers use different rendering engines: Internet Explorer uses Trident, Firefox uses Gecko, Safari uses WebKit, Opera and Chrome uses Blink, which is a fork of WebKit. 
 
 ## Main flow of Rendering
 
@@ -40,7 +40,7 @@ First, the rendering engine will start parsing the HTML document and convert ele
 
 <div style="text-align: center; margin: 40px 0;"><img src="http://kleopetrov.me/assets/images/posts/DOM.png" alt="Render Tree" /></div>
 
-The final output of this entire process is teh Document Object Model (DOM) of our simple page, which the browser uses for all further processing of the page. Every time the browser processes HTML, it goes through the same steps:
+The final output of this entire process is the Document Object Model (DOM) of our simple page, which the browser uses for all further processing of the page. Every time the browser processes HTML, it goes through the same steps:
 
 1. **Convert bytes to characters** - the browser reads the raw bytes of HTML and translates them to individual characters.
 2. **Identify tokens** - converts strings of characters into distinct tokens, for example - `<html>`, `<body>`, etc.
@@ -63,9 +63,9 @@ As with HTML, we need to convert the received CSS rules into something that the 
 
 Why does the CSSOM have a tree structure? When computing the final set of styles for any object on the page, the browser starts with the most general rules applicable to that node and then recursively refines the computed styles by applying more specific rules; that is, the rules 'cascade down'.
 
-Note that the above tree is not the complete CSSOM tree and only shows the styles we decided to override. Every browser provides a default set of styles also known as 'yse agent styles'.
+Note that the above tree is not the complete CSSOM tree and only shows the styles we decided to override. Every browser provides a default set of styles also known as 'user agent styles'.
 
-After the rendering engine creates the DOM and CSSOM, it combines them into a render tree, which is used to compute the layout of each visible element and serves as an input to the paint process that renders the pixels to screen. If the style is not loaded and parsed yet, the script will get wrong answers and apparently this caused lots of problems. It seems to be an edge case but is quite common. Browsers implement different strategies for these scenarios; for example, WebKit blocks scripts only when they try to access certain style properties that may be affected by unloaded style sheets. 
+After the rendering engine creates the DOM and CSSOM, it combines them into a render tree, which is used to compute the layout of each visible element and serves as an input to the paint process that renders the pixels to the screen. If the style is not loaded and parsed yet, the script will get wrong answers and apparently this can cause lots of problems. It seems to be an edge case but is quite common. Browsers implement different strategies for these scenarios; for example, WebKit blocks scripts only when they try to access certain style properties that may be affected by unloaded style sheets. 
 
 <div style="text-align: center; margin: 40px 0;"><img src="http://kleopetrov.me/assets/images/posts/render-tree.png" alt="Render Tree" /></div>
 
