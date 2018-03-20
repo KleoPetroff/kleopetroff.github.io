@@ -1,6 +1,6 @@
 ---
 title: Front-End For Backend Developers - Part I
-date: 2018-03-18 00:00:00 Z
+date: 2018-03-19 00:00:00 Z
 description: How browsers work and render pages
 layout: post
 ---
