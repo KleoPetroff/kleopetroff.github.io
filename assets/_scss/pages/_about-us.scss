@@ -20,17 +20,15 @@
 }
 
 .name h2 {
-    font-size: 4em;
+    font-size: 2.3em;
     font-family: $main-heading-font;
     font-weight: 700;
     margin-bottom: 0;
     color: $main-color;
 }
-
 .name h5 { color: $secondary-color }
 
 .contact h4 {
-    margin-top: 10px;
     margin-bottom: 10px;
     color: $main-color;
 }
@@ -62,6 +60,11 @@
 }
 
 .contact-position { float: right }
+
+.contact-position h2 {
+    font-size: 2.3em;
+    margin-bottom: 10px;
+}
 
 .container .left,
 .container .right {
