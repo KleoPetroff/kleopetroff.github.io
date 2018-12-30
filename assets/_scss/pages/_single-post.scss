@@ -1,14 +1,19 @@
 
 /* Single Post */
 .post {
-    margin-top: 5em;
+    margin: 5em 5em 0;
     padding-bottom: 8em;
 }
 
 .post p,
 .post li {
-    line-height: 1.8;
+    font-size: 1.4em;
+    line-height: 1.65;
     margin-bottom: 0;
+}
+
+.post p {
+    margin-top: 1em;
 }
 
 .post ol li {
@@ -32,7 +37,7 @@
 .post h2,
 .post h3 {
     margin-top: 1.3em;
-    font-size: 2em;
+    font-size: 2.4em;
     font-weight: normal;
 }
 
@@ -51,6 +56,10 @@
 
 .post img {
     max-width: 100%;
+}
+
+.post pre {
+    font-size: 1.1em;
 }
 
 // Disqus Posts
