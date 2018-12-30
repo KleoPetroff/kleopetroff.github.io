@@ -12,6 +12,11 @@
 
 @media all and (max-width: 950px) {
     // Single posts smaller font-size on mobile
+
+    .post {
+        margin: 5em 0 0;
+    }
+
     .post p,
     .post li {
         font-size: 1em;
