@@ -10,7 +10,9 @@ comments: true
             {{content}}
 
             <hr />
-            {% include disqus.html %}
+            {% if site.disqus.shortname %}
+                {% include disqus_comments.html %}
+            {% endif %}
         </div>
     </div>
 </div>

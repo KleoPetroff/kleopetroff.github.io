@@ -17,7 +17,10 @@ exclude:
 highlighter: rouge
 background: header-bg.jpg
 less_than_minute: 1
-gems:
+plugins:
 - jekyll-paginate
 paginate: 7
 paginate_path: page:num
+disqus:
+  shortname: kleopetroff
+
