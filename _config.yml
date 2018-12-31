@@ -19,7 +19,7 @@ background: header-bg.jpg
 less_than_minute: 1
 plugins:
 - jekyll-paginate
-paginate: 7
+paginate: 15
 paginate_path: page:num
 disqus:
   shortname: kleopetroff
