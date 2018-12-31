@@ -7,16 +7,3 @@
     @include transition(all, .2s, ease-out);
     color: $link-hover-color;
 }
-
-.meta {
-    color: $secondary-color;
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1.25rem;
-}
-
-.os_poll {
-  margin-top: 30px;
-  padding-top: 40px;
-  border-top: 2px solid #e7e9ee;
-}

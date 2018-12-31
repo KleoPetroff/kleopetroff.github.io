@@ -11,28 +11,8 @@
 }
 
 @media all and (max-width: 950px) {
-    // Single posts smaller font-size on mobile
-
     .post {
-        margin: 5em 0 0;
-    }
-
-    .post p,
-    .post li {
-        font-size: 1em;
-    }
-
-    .post h1 {
-        font-size: 2.25em;
-    }
-
-    .post h2,
-    .post h3 {
-        font-size: 1.85em;
-    }
-
-    .posts {
-        margin-top: 0;
+        margin: 0;
     }
 
     .posts li {
@@ -40,9 +20,6 @@
     }
 
     .posts h2 {
-        font-size: 1.85em;
-        text-align: center;
-        margin-bottom: 0;
         display: block;
         float: none;
     }
@@ -52,14 +29,8 @@
         float: none;
     }
 
-    .posts-description {
-        font-size: 1em;
-        text-align: center;
-    }
-
     .meta {
         font-size: 0.85em;
-        text-align: center;
         margin-bottom: 0;
     }
 
@@ -112,27 +83,6 @@
     .archive li + li .date {
         margin-bottom: 0;
         margin-top: 3em;
-    }
-
-
-    .archive-post {
-        display: block;
-    }
-
-    .archive-year,
-    .archive-post {
-        text-align: center;
-    }
-
-    .archive-meta {
-        text-align: center;
-        display: block;
-        margin-top: 5px;
-        float: none;
-
-        &:before {
-            display: none;
-        }
     }
 
     .header-navigation {

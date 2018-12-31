@@ -1,4 +1,4 @@
-.pagination { padding-bottom: 8em }
+.pagination { margin: 2em 10em 5em }
 
 a.next,
 a.previous {
@@ -9,7 +9,7 @@ a.previous {
 
 a.previous:hover,
 a.next:hover {
-    color: $link-hover-color;
+    color: $main-color;
     background: #fff;
-    border-color: $link-hover-color;
+    border-color: $main-color;
 }

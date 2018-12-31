@@ -4,7 +4,7 @@ layout: default
 
 <div class="container">
     <div class="row">
-        <ul class="posts twelve column">
+        <ul class="posts">
             {% for post in paginator.posts %}
 
             {% assign minutes = post.content | number_of_words | divided_by: 180 %}
@@ -15,8 +15,8 @@ layout: default
             {% endif %}
                 <li>
                     <article>
-                        <span class="meta">{{post.date | date_to_string }} • {{ read-time }} min read</span>
                         <h2 class="clearfix"><a class="post-title" href="{{post.url}}">{{post.title}}</a></h2>
+                        <span class="meta">{{post.date | date_to_string }} • {{ read-time }} min read</span>
                         <p class="posts-description">{{post.description}}</p>
                     </article>
                 </li>
