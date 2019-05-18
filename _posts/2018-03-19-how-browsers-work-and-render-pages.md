@@ -1,7 +1,7 @@
 ---
-title: Front-End For Backend Developers - Part I
+title: How browsers work and render pages
 date: 2018-03-19 00:00:00 Z
-description: How browsers work and render pages
+description: Demystifying the magic behind rendering a page 
 layout: post
 ---
 
