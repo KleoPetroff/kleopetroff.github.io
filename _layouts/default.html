@@ -69,15 +69,16 @@ layout: compress
             @media all and (max-width: 949px) {
                 header { padding-bottom: 0 }
                 .presentation-logo { display: block; float: none; text-align: center; }
-                .hashnode { float: none; display: inline-block; margin: 15px 0; }
+                .hashnode { float: none; display: inline-block; margin: 15px 0; padding-left: 0; background: none }
                 .logo { float: none; display: inline-block; text-align: center; margin-top: 0; }
                 .header-navigation { float: none }
                 .navigation { text-align: center; display: block;}
-                .container { width: 90% }
+                .navigation li { margin: 0 18px }
+                .container { width: 90%; text-align: center }
                 .column, .columns { margin-left: 0 }
-                .posts, .archive { margin: 0 5em 0 }
-                .pagination { margin: 2em 5em 5em }
-                .archive { margin: 3em 5em 7em }
+                .posts, .archive { margin: 0 }
+                .pagination { margin: 2em 0.5em 6em }
+                .archive { margin: 3em 0 7em }
             }
             @media all and (max-width: 950px) {
                 .posts h2 { font-size: 1.85em }
