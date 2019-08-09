@@ -1,31 +1,43 @@
 {
-  "name": "kleopetroff.github.io",
-  "version": "1.0.0",
-  "description": "The personal website of Kliment Petrov",
-  "main": "gulpfile.js",
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "gatsby": "^2.13.56",
+    "gatsby-image": "^2.2.8",
+    "gatsby-plugin-manifest": "^2.2.5",
+    "gatsby-plugin-offline": "^2.2.5",
+    "gatsby-plugin-react-helmet": "^3.1.3",
+    "gatsby-plugin-sharp": "^2.2.10",
+    "gatsby-source-filesystem": "^2.1.9",
+    "gatsby-transformer-sharp": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://KleoPetroff:kliment1991@github.com/KleoPetroff/kleopetroff.github.io.git"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
-  "keywords": [
-    "jekyll",
-    "personal",
-    "website"
-  ],
-  "author": "Kliment Petrov",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KleoPetroff/kleopetroff.github.io/issues"
-  },
-  "homepage": "https://github.com/KleoPetroff/kleopetroff.github.io#readme",
-  "devDependencies": {
-    "cli-color": "1.4.0",
-    "gulp": "4.0.0",
-    "gulp-plumber": "1.2.1",
-    "gulp-sass": "4.0.2",
-    "node-sass": "4.12.0"
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
