@@ -1,12 +1,24 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+import { createGlobalStyle } from 'styled-components'
 
-import Header from './header'
-import './layout.css'
+import Header from './Header'
 
 interface LayoutProps {
   children: React.ReactNode
 }
+
+const GlobalStyled = createGlobalStyle`
+  body {
+    height: 100%;
+    margin: 0;
+    font-family: "Merriweather", Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.35;
+    color: #121212;
+  }
+`
 
 const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -21,6 +33,7 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
 
   return (
     <>
+      <GlobalStyled />
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
