@@ -10,6 +10,11 @@ interface PostsProps {
 const ArticleWrapper = styled.div`
   max-width: 640px;
   margin: 80px auto 0;
+
+  @media all and (max-width: 949px) {
+    padding: 0 20px;
+    text-align: center;
+  }
 `
 
 const Articles: React.FunctionComponent<PostsProps> = ({ posts }) => (
