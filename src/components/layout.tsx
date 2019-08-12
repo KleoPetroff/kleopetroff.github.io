@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 import Header from './Header'
 
@@ -20,6 +20,16 @@ const GlobalStyled = createGlobalStyle`
   }
 `
 
+const Main = styled.main`
+  max-width: 640px;
+  margin: 80px auto 0;
+
+  @media all and (max-width: 949px) {
+    padding: 0 20px;
+    text-align: center;
+  }
+`
+
 const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -35,7 +45,7 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
     <>
       <GlobalStyled />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
+      <Main>{children}</Main>
       <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
