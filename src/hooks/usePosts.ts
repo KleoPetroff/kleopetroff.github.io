@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby'
+import { buildArticlePreview } from '../utils/helpers'
 
-interface PostNotes {
+export interface PostNote {
   frontmatter: {
     title: string
     slug: string
@@ -11,9 +12,9 @@ interface PostNotes {
   timeToRead: number
 }
 
-interface GraphQLPosts {
+export interface GraphQLPosts {
   allMdx: {
-    nodes: PostNotes[]
+    nodes: PostNote[]
   }
 }
 
@@ -44,14 +45,7 @@ const usePosts = (): Post[] => {
     }
   `)
 
-  return data.allMdx.nodes.map(node => ({
-    title: node.frontmatter.title,
-    slug: node.frontmatter.slug,
-    description: node.frontmatter.description,
-    date: node.frontmatter.date,
-    excerpt: node.excerpt,
-    timeToRead: node.timeToRead
-  }))
+  return data.allMdx.nodes.map(buildArticlePreview)
 }
 
 export default usePosts
