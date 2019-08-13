@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Post } from '../../hooks/usePosts'
 import styled from 'styled-components'
+import dayjs from 'dayjs'
 
 interface ArticleProps {
   post: Post
@@ -43,7 +44,7 @@ const Article: React.FunctionComponent<ArticleProps> = ({ post }) => (
     <Title>
       <TitleLink to={post.slug}>{post.title}</TitleLink>
     </Title>
-    <ArticleDate>{new Date(post.date).toDateString()}</ArticleDate>
+    <ArticleDate>{dayjs(post.date).format('DD MMM YYYY')}</ArticleDate>
     <Description>{post.description}</Description>
   </ArticlePreview>
 )

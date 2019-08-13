@@ -12,6 +12,7 @@
     "@types/react-helmet": "^5.0.9",
     "@types/styled-components": "^4.1.18",
     "babel-plugin-styled-components": "^1.10.6",
+    "dayjs": "^1.8.15",
     "gatsby": "^2.13.56",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-manifest": "^2.2.5",
