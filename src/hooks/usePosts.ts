@@ -8,6 +8,7 @@ interface PostNotes {
     date: string
   }
   excerpt: string
+  timeToRead: number
 }
 
 interface GraphQLPosts {
@@ -22,6 +23,7 @@ export interface Post {
   description: string
   date: string
   excerpt: string
+  timeToRead: number
 }
 
 const usePosts = (): Post[] => {
@@ -36,6 +38,7 @@ const usePosts = (): Post[] => {
             date
           }
           excerpt
+          timeToRead
         }
       }
     }
@@ -46,7 +49,8 @@ const usePosts = (): Post[] => {
     slug: node.frontmatter.slug,
     description: node.frontmatter.description,
     date: node.frontmatter.date,
-    excerpt: node.excerpt
+    excerpt: node.excerpt,
+    timeToRead: node.timeToRead
   }))
 }
 

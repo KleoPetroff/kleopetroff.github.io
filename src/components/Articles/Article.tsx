@@ -27,10 +27,9 @@ const TitleLink = styled(Link)`
     color: #2424ed;
   }
 `
-const ArticleDate = styled.div`
+const Meta = styled.div`
   color: #53585d;
-  display: block;
-  margin-top: 9px;
+  margin-top: 5px;
   font-size: 0.8em;
 `
 
@@ -44,7 +43,10 @@ const Article: React.FunctionComponent<ArticleProps> = ({ post }) => (
     <Title>
       <TitleLink to={post.slug}>{post.title}</TitleLink>
     </Title>
-    <ArticleDate>{dayjs(post.date).format('DD MMM YYYY')}</ArticleDate>
+    <Meta>
+      <span>{dayjs(post.date).format('DD MMM YYYY')}</span>
+      <span> • {post.timeToRead} min read</span>
+    </Meta>
     <Description>{post.description}</Description>
   </ArticlePreview>
 )
