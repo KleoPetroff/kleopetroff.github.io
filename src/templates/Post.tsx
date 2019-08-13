@@ -16,18 +16,6 @@ interface PostTemplateProps {
   }
 }
 
-export const query = graphql`
-  query($slug: String!) {
-    mdx(frontmatter: { slug: { eq: $slug } }) {
-      frontmatter {
-        title
-        date
-      }
-      body
-    }
-  }
-`
-
 const Post = styled.div`
   width: 640px;
   margin: 0 auto;
@@ -46,3 +34,15 @@ const PostTemplate: React.FunctionComponent<PostTemplateProps> = ({
 )
 
 export default PostTemplate
+
+export const query = graphql`
+  query($slug: String!) {
+    mdx(frontmatter: { slug: { eq: $slug } }) {
+      frontmatter {
+        title
+        date
+      }
+      body
+    }
+  }
+`
