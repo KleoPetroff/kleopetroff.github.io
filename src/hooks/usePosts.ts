@@ -29,7 +29,7 @@ export interface Post {
 const usePosts = (): Post[] => {
   const data: GraphQLPosts = useStaticQuery(graphql`
     query Posts {
-      allMdx {
+      allMdx(sort: { fields: [frontmatter___date], order: DESC }, limit: 15) {
         nodes {
           frontmatter {
             title
