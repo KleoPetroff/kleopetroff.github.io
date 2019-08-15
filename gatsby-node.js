@@ -27,7 +27,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 
-  const postsPerPage = 1
+  const postsPerPage = 10
   const numberOfPages = Math.ceil(posts.length / postsPerPage)
 
   Array.from({ length: numberOfPages }).forEach((_, index) => {
