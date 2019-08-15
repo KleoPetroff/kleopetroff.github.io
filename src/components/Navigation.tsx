@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Route } from '../utils/routes'
+import { Route } from '../constants/routes'
 import { Link } from 'gatsby'
 
 interface NavigationProps {

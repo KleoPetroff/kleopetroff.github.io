@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SocialLink from './SocialLink'
-import { socials } from '../utils/socials'
+import { socials } from '../constants/socials'
 
 const FooterWrapper = styled.footer`
   flex-shrink: 0;

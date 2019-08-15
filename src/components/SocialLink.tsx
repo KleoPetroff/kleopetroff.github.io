@@ -1,5 +1,5 @@
 import React from 'react'
-import { Social } from '../utils/socials'
+import { Social } from '../constants/socials'
 
 const SocialLink: React.FunctionComponent<Social> = ({
   href,
