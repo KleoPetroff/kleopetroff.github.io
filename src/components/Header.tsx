@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import Logo from './logo'
-import Navigation from './navigation'
-import { routes } from '../../utils/routes'
+import Logo from './Logo'
+import Navigation from './Navigation'
+import { routes } from '../utils/routes'
 
 interface HeaderProps {
   siteTitle: string

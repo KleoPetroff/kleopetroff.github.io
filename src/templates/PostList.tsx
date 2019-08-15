@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import Article from '../components/Articles/Article'
+import ArticlePreview from '../components/ArticlePreview'
 import { GraphQLPosts } from '../hooks/usePosts'
 import { buildArticlePreview } from '../utils/helpers'
 import PageNavigation from '../components/PageNavigation'
@@ -23,7 +23,7 @@ const PostList: React.FunctionComponent<PostListProps> = props => {
   return (
     <Layout>
       {posts.map(post => (
-        <Article key={post.slug} post={post} />
+        <ArticlePreview key={post.slug} post={post} />
       ))}
 
       <PageNavigation

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Post } from '../../hooks/usePosts'
+import { Post } from '../hooks/usePosts'
 import styled from 'styled-components'
 import dayjs from 'dayjs'
 
@@ -8,7 +8,7 @@ interface ArticleProps {
   post: Post
 }
 
-const ArticlePreview = styled.article`
+const Wrapper = styled.article`
   margin-bottom: 50px;
 `
 
@@ -38,8 +38,8 @@ const Description = styled.div`
   margin: 0.4em 0 0;
 `
 
-const Article: React.FunctionComponent<ArticleProps> = ({ post }) => (
-  <ArticlePreview>
+const ArticlePreview: React.FunctionComponent<ArticleProps> = ({ post }) => (
+  <Wrapper>
     <Title>
       <TitleLink to={post.slug}>{post.title}</TitleLink>
     </Title>
@@ -48,7 +48,7 @@ const Article: React.FunctionComponent<ArticleProps> = ({ post }) => (
       <span> • {post.timeToRead} min read</span>
     </Meta>
     <Description>{post.description}</Description>
-  </ArticlePreview>
+  </Wrapper>
 )
 
-export default Article
+export default ArticlePreview

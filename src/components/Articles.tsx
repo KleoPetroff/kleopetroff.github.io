@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import { Post } from '../../hooks/usePosts'
-import Article from './Article'
+import { Post } from '../hooks/usePosts'
+import ArticlePreview from './ArticlePreview'
 
 interface PostsProps {
   posts: Post[]
@@ -9,7 +9,7 @@ interface PostsProps {
 const Articles: React.FunctionComponent<PostsProps> = ({ posts }) => (
   <Fragment>
     {posts.map(post => (
-      <Article key={post.slug} post={post} />
+      <ArticlePreview key={post.slug} post={post} />
     ))}
   </Fragment>
 )

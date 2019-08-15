@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import hashnodeLogo from '../../images/hashnode.png'
+import hashnodeLogo from '../images/hashnode.png'
 
 interface LogoProps {
   siteTitle: string
