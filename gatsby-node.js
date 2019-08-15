@@ -26,4 +26,25 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }
     })
   })
+
+  const postsPerPage = 1
+  const numberOfPages = Math.ceil(posts.length / postsPerPage)
+
+  Array.from({ length: numberOfPages }).forEach((_, index) => {
+    const isFirstPage = index === 0
+    const currentPage = index + 1
+
+    if (isFirstPage) return
+
+    actions.createPage({
+      path: `/page/${currentPage}`,
+      component: require.resolve('./src/templates/PostList.tsx'),
+      context: {
+        limit: postsPerPage,
+        skip: index * postsPerPage,
+        currentPage,
+        numberOfPages
+      }
+    })
+  })
 }

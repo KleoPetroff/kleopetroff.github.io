@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import usePosts from '../hooks/usePosts'
 import Articles from '../components/Articles'
+import PageNavigation from '../components/PageNavigation'
 
 const IndexPage = () => {
   const data = usePosts()
@@ -12,6 +13,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <Articles posts={data} />
+      <PageNavigation isFirst={true} isLast={false} currentPage={1} />
     </Layout>
   )
 }
