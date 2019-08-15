@@ -3,14 +3,18 @@ import { useStaticQuery, graphql } from 'gatsby'
 import styled, { createGlobalStyle } from 'styled-components'
 
 import Header from './Header'
+import Footer from './Footer'
 
 interface LayoutProps {
   children: React.ReactNode
 }
 
 const GlobalStyled = createGlobalStyle`
-  body {
+  html, body, #___gatsby, div[role="group"][tabindex] {
     height: 100%;
+  }
+
+  body {
     margin: 0;
     font-family: "Merriweather", Verdana, sans-serif;
     font-size: 16px;
@@ -18,9 +22,15 @@ const GlobalStyled = createGlobalStyle`
     line-height: 1.35;
     color: #121212;
   }
+
+  div[role="group"][tabindex] {
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 const Main = styled.main`
+  flex: 1 0 auto;
   max-width: 640px;
   margin: 80px auto 0;
 
@@ -46,11 +56,7 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
       <GlobalStyled />
       <Header siteTitle={data.site.siteMetadata.title} />
       <Main>{children}</Main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <Footer />
     </>
   )
 }
