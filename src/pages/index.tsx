@@ -5,10 +5,11 @@ import SEO from '../components/seo'
 import usePosts from '../hooks/usePosts'
 import Articles from '../components/Articles'
 import PageNavigation from '../components/PageNavigation'
+import { POSTS_PER_PAGE } from '../constants/pages'
 
 const IndexPage = () => {
   const posts = usePosts()
-  const shouldRenderPageNavigation = posts.length > 10
+  const shouldRenderPageNavigation = posts.length > POSTS_PER_PAGE
 
   return (
     <Layout>
