@@ -9,7 +9,7 @@ interface PageNavigationProps {
 }
 
 interface PageButton {
-  toRight?: boolean
+  moveRight?: boolean
 }
 
 const NavigationWrapper = styled.div`
@@ -25,7 +25,7 @@ export const PageButton = styled(Link)<GatsbyLinkProps<{}> & PageButton>`
   border: 1px solid #b7b7b7;
   border-radius: 5px;
   text-decoration: none;
-  margin-left: ${props => (props.toRight ? 'auto' : null)};
+  margin-left: ${props => (props.moveRight ? 'auto' : null)};
   transition: all 0.2s ease-in;
 
   :hover {
@@ -47,7 +47,7 @@ const PageNavigation: React.FunctionComponent<PageNavigationProps> = ({
       </PageButton>
     )}
     {!isLast && (
-      <PageButton toRight to={`page/${currentPage + 1}`}>
+      <PageButton moveRight to={`page/${currentPage + 1}`}>
         ❯
       </PageButton>
     )}
