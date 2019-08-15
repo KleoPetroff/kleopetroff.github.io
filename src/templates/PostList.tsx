@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/ArticlePreview'
 import { GraphQLPosts } from '../hooks/usePosts'
-import { buildArticlePreview } from '../utils/helpers'
+import { buildArticlePreview } from '../utils/articleBuilder'
 import PageNavigation from '../components/PageNavigation'
 
 interface PostListProps {

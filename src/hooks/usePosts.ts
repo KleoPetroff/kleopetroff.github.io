@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby'
-import { buildArticlePreview } from '../utils/helpers'
+import { buildArticlePreview } from '../utils/articleBuilder'
 
 export interface PostNote {
   frontmatter: {
