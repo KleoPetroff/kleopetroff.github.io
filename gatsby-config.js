@@ -2,8 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Kleo Petrov`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@kleopetrov`,
-    hashnodeTitle: `Hashnode Evangelist and Top Contributor`
+    author: `@kleopetrov`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
