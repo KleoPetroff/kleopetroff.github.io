@@ -1,5 +1,3 @@
-import { POSTS_PER_PAGE } from './src/constants/pages'
-
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     query {
@@ -29,7 +27,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 
-  const postsPerPage = POSTS_PER_PAGE
+  const postsPerPage = 10
   const numberOfPages = Math.ceil(posts.length / postsPerPage)
 
   Array.from({ length: numberOfPages }).forEach((_, index) => {
