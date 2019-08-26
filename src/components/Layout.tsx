@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled, { createGlobalStyle } from 'styled-components'
 
@@ -52,12 +52,12 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
   `)
 
   return (
-    <>
+    <Fragment>
       <GlobalStyled />
       <Header siteTitle={data.site.siteMetadata.title} />
       <Main>{children}</Main>
       <Footer />
-    </>
+    </Fragment>
   )
 }
 
