@@ -21,7 +21,7 @@ interface PostTemplateProps {
 
 const Post = styled.div`
   width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 
   img,
   iframe {

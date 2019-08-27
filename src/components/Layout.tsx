@@ -27,6 +27,11 @@ const GlobalStyled = createGlobalStyle`
     display: flex;
     flex-direction: column;
   }
+  
+  code[class*="language-"],
+  pre[class*="language-"] {
+    font-size: 15px;
+  }
 `
 
 const Main = styled.main`
