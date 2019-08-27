@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Post } from '../hooks/usePosts'
 import styled from 'styled-components'
-import dayjs from 'dayjs'
+import Meta from './Meta'
 
 interface ArticleProps {
   post: Post
@@ -27,11 +27,6 @@ const TitleLink = styled(Link)`
     color: #2424ed;
   }
 `
-const Meta = styled.div`
-  color: #53585d;
-  margin-top: 5px;
-  font-size: 0.8em;
-`
 
 const Description = styled.div`
   line-height: 1.5;
@@ -43,10 +38,7 @@ const ArticlePreview: React.FunctionComponent<ArticleProps> = ({ post }) => (
     <Title>
       <TitleLink to={post.slug}>{post.title}</TitleLink>
     </Title>
-    <Meta>
-      <span>{dayjs(post.date).format('DD MMM YYYY')}</span>
-      <span> • {post.timeToRead} min read</span>
-    </Meta>
+    <Meta date={post.date} timeToRead={post.timeToRead} />
     <Description>{post.description}</Description>
   </Wrapper>
 )
