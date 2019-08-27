@@ -32,7 +32,7 @@ const GlobalStyled = createGlobalStyle`
 const Main = styled.main`
   flex: 1 0 auto;
   max-width: 640px;
-  margin: 80px auto 0;
+  margin: 60px auto 0;
 
   @media all and (max-width: 949px) {
     padding: 0 20px;
