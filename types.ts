@@ -1,4 +1,5 @@
 declare module '*.png'
+declare module '*.svg'
 declare module 'gatsby-plugin-mdx'
 
 declare module '*.mdx' {
