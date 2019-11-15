@@ -7,6 +7,11 @@ import Footer from './Footer'
 
 interface LayoutProps {
   children: React.ReactNode
+  maxWidth?: number
+}
+
+interface MainProps {
+  maxWidth: number
 }
 
 const GlobalStyled = createGlobalStyle`
@@ -34,9 +39,9 @@ const GlobalStyled = createGlobalStyle`
   }
 `
 
-const Main = styled.main`
+const Main = styled.main<MainProps>`
   flex: 1 0 auto;
-  max-width: 640px;
+  max-width: ${props => props.maxWidth}px;
   margin: 60px auto 0;
 
   @media all and (max-width: 949px) {
@@ -45,7 +50,10 @@ const Main = styled.main`
   }
 `
 
-const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
+const Layout: React.FunctionComponent<LayoutProps> = ({
+  children,
+  maxWidth = 640
+}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -60,7 +68,7 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
     <Fragment>
       <GlobalStyled />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Main>{children}</Main>
+      <Main maxWidth={maxWidth}>{children}</Main>
       <Footer />
     </Fragment>
   )
