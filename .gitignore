@@ -44,3 +44,7 @@ crashlytics.properties
 crashlytics-build.properties
 _site
 node_modules
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
