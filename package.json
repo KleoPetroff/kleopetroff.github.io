@@ -26,6 +26,6 @@
     "gulp": "4.0.2",
     "gulp-plumber": "1.2.1",
     "gulp-sass": "5.1.0",
-    "node-sass": "7.0.0"
+    "node-sass": "9.0.0"
   }
 }
