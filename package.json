@@ -23,7 +23,7 @@
   "homepage": "https://github.com/KleoPetroff/kleopetroff.github.io#readme",
   "devDependencies": {
     "cli-color": "2.0.0",
-    "gulp": "4.0.2",
+    "gulp": "5.0.0",
     "gulp-plumber": "1.2.1",
     "gulp-sass": "5.1.0",
     "node-sass": "9.0.0"
